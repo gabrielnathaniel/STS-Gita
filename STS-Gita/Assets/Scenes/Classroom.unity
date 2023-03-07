@@ -327,9 +327,9 @@ MonoBehaviour:
   FollowSpeed: 2
   yOffset: 1
   target: {fileID: 1572440243}
-  leftLimit: -2.49
-  rightLimit: 2.49
-  topLimit: 0
+  leftLimit: -2.47
+  rightLimit: 2.47
+  topLimit: 0.02
   bottomLimit: 0.01
 --- !u!1 &1027457399
 GameObject:
@@ -524,6 +524,7 @@ GameObject:
   - component: {fileID: 1572440245}
   - component: {fileID: 1572440244}
   - component: {fileID: 1572440246}
+  - component: {fileID: 1572440247}
   m_Layer: 0
   m_Name: Gita
   m_TagString: Player
@@ -683,6 +684,22 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1572440247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572440240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06b93cb7a1305c42ac1fbaef6251a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLimit: -13
+  rightLimit: 13
+  topLimit: 3
+  bottomLimit: -3
 --- !u!1 &1798991619
 GameObject:
   m_ObjectHideFlags: 0
