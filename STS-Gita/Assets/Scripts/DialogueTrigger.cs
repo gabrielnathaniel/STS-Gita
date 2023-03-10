@@ -33,6 +33,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if(playerDetected && Input.GetKeyDown(KeyCode.F))
         {
+            Debug.Log("trigger");
             dialogueScript.StartDialogue();
         }
     }

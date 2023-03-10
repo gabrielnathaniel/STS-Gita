@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Dialogue : MonoBehaviour
 {
     //Fields
+    public DialogueTrigger trigger;
     //Box
     public GameObject box;
     //Indicator
@@ -45,6 +46,7 @@ public class Dialogue : MonoBehaviour
     //Start Dialogue
     public void StartDialogue()
     {
+        Debug.Log("start");
         if(started)
             return;
 
@@ -60,6 +62,7 @@ public class Dialogue : MonoBehaviour
 
     private void GetDialogue(int i)
     {
+        Debug.Log("get" + index);
         //Start index at zero
         index = i;
         //Reset the character index
@@ -73,6 +76,7 @@ public class Dialogue : MonoBehaviour
     //End Dialogue
     public void EndDialogue()
     {
+        Debug.Log("end");
         //Started is disabled
         started = false;
         //Disable wait for next
@@ -124,11 +128,13 @@ public class Dialogue : MonoBehaviour
             //Check if we are in the scope of dialogues List
             if(index < dialogues.Count)
             {
+                Debug.Log("update get");
                 //If so, fetch the next dialogue
                 GetDialogue(index);
             }
             else
             {
+                Debug.Log("update end");
                 //If not, end the dialogue process
                 ToggleIndicator(true);
                 EndDialogue();
