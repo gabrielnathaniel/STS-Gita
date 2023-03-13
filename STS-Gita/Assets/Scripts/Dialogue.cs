@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class Dialogue : MonoBehaviour
 {
     //Fields
-    public DialogueTrigger trigger;
-    //Box
+    //Window
     public GameObject box;
     //Indicator
     public GameObject indicator;
@@ -28,33 +27,30 @@ public class Dialogue : MonoBehaviour
 
     private void Awake()
     {
-        ToggleBox(false);
         ToggleIndicator(false);
+        ToggleBox(false);
     }
 
     private void ToggleBox(bool show)
     {
         box.SetActive(show);
     }
-
     public void ToggleIndicator(bool show)
     {
         indicator.SetActive(show);
     }
 
-
     //Start Dialogue
     public void StartDialogue()
     {
-        Debug.Log("start");
-        if(started)
+        if (started)
             return;
 
         //Boolean to indicate that we have started
         started = true;
         //Show the window
         ToggleBox(true);
-        //Hide the indicator
+        //hide the indicator
         ToggleIndicator(false);
         //Start with first dialogue
         GetDialogue(0);
@@ -62,84 +58,75 @@ public class Dialogue : MonoBehaviour
 
     private void GetDialogue(int i)
     {
-        Debug.Log("get" + index);
-        //Start index at zero
+        //start index at zero
         index = i;
         //Reset the character index
         charIndex = 0;
-        //Clear the dialogue component text
+        //clear the dialogue component text
         dialogueText.text = string.Empty;
         //Start writing
-        StartCoroutine(Typing());
+        StartCoroutine(Writing());
     }
 
     //End Dialogue
     public void EndDialogue()
     {
-        Debug.Log("end");
-        //Started is disabled
+        //Stared is disabled
         started = false;
-        //Disable wait for next
+        //Disable wait for next as well
         waitForNext = false;
-        //Stop all ienumerators
+        //Stop all Ienumerators
         StopAllCoroutines();
         //Hide the window
-        ToggleBox(false);
+        ToggleBox(false);        
     }
-
-    //Typing Logic
-    IEnumerator Typing()
+    //Writing logic
+    IEnumerator Writing()
     {
         yield return new WaitForSeconds(writingSpeed);
 
         string currentDialogue = dialogues[index];
-        //Writing the character
+        //Write the character
         dialogueText.text += currentDialogue[charIndex];
-        //Increase the character index
+        //increase the character index 
         charIndex++;
-        //Make sure you have reached the end of sentence
+        //Make sure you have reached the end of the sentence
         if(charIndex < currentDialogue.Length)
         {
-            //Wait x seconds
+            //Wait x seconds 
             yield return new WaitForSeconds(writingSpeed);
             //Restart the same process
-            StartCoroutine(Typing());
+            StartCoroutine(Writing());
         }
         else
         {
             //End this sentence and wait for the next one
             waitForNext = true;
-        }
-        
+        }        
     }
 
     private void Update()
     {
-        if(!started)
-        {
+        if (!started)
             return;
-        }
 
         if(waitForNext && Input.GetKeyDown(KeyCode.F))
         {
             waitForNext = false;
             index++;
 
-            //Check if we are in the scope of dialogues List
+            //Check if we are in the scope fo dialogues List
             if(index < dialogues.Count)
             {
-                Debug.Log("update get");
-                //If so, fetch the next dialogue
+                //If so fetch the next dialogue
                 GetDialogue(index);
             }
             else
             {
-                Debug.Log("update end");
-                //If not, end the dialogue process
+                //If not end the dialogue process
                 ToggleIndicator(true);
                 EndDialogue();
-
-            }
+            }            
         }
     }
 
