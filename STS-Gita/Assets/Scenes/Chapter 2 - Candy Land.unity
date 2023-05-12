@@ -373,9 +373,10 @@ GameObject:
   - component: {fileID: 462165000}
   - component: {fileID: 462164999}
   - component: {fileID: 462165003}
-  m_Layer: 0
+  - component: {fileID: 462165004}
+  m_Layer: 8
   m_Name: Bandit
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -572,6 +573,21 @@ MonoBehaviour:
     m_Bits: 1024
   attackRange: 1.22
   attackDamage: 40
+  attackRate: 2
+--- !u!114 &462165004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462164995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e744ebc444560f74aae0e5f393dcaa57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathEffect: {fileID: 0}
 --- !u!1 &706799024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,7 +5695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 909809811}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5800,7 +5816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FollowSpeed: 2
   yOffset: 1
-  target: {fileID: 1139737957}
+  target: {fileID: 462164998}
   leftLimit: 0
   rightLimit: 10.5
   topLimit: 0.02
@@ -6009,7 +6025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1169780243}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6486,6 +6502,7 @@ GameObject:
   - component: {fileID: 1885088567}
   - component: {fileID: 1885088566}
   - component: {fileID: 1885088568}
+  - component: {fileID: 1885088569}
   m_Layer: 10
   m_Name: Pudding
   m_TagString: Untagged
@@ -6639,8 +6656,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 462164998}
+  isFlipped: 0
   animator: {fileID: 1885088563}
   maxHealth: 100
+--- !u!114 &1885088569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885088562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 20
+  attackOffset: {x: -1.23, y: 0, z: 0}
+  attackRange: 2
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &2074910814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5346902486446347060, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
