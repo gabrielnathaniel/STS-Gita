@@ -47,3 +47,6 @@ TagManager:
   - name: Effect
     uniqueID: 2596928465
     locked: 0
+  - name: MiniGame
+    uniqueID: 3688673809
+    locked: 0
