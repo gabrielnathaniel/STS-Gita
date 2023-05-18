@@ -1495,6 +1495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DimasIndicator
       objectReference: {fileID: 0}
+    - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: boxes.Array.size
       value: 2
@@ -1578,6 +1582,10 @@ PrefabInstance:
     - target: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_Name
       value: Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -1757,6 +1765,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1139737957}
     m_Modifications:
+    - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1828,6 +1840,10 @@ PrefabInstance:
     - target: {fileID: 4715033625648482664, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6237802617663638098, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: dialogues.Array.size
@@ -12170,6 +12186,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2136946432}
     m_Modifications:
+    - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: box.Array.size
       value: 2
@@ -12261,6 +12281,10 @@ PrefabInstance:
     - target: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6237802617663638098, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: writingSpeed

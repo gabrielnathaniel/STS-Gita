@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
 
     Message[] currentMessages;
     int activeMessage = 0;
-    public static bool isActive = false;
+    public bool isActive = false;
 
     private void Awake()
     {
@@ -39,7 +39,6 @@ public class DialogueManager : MonoBehaviour
         {
             box.SetActive(false);
         }
-        currentMessages = null;
         isActive = false;
     }
 
@@ -47,7 +46,6 @@ public class DialogueManager : MonoBehaviour
     {
         Message messageToDisplay = currentMessages[activeMessage];
         int actorId = messageToDisplay.actorId;
-        Debug.Log(actorId);
         GameObject activeBox = boxes[actorId];
         foreach (GameObject box in boxes)
         {
@@ -61,7 +59,6 @@ public class DialogueManager : MonoBehaviour
     void NextMessage()
     {
         activeMessage++;
-        // Debug.Log(activeMessage);
         if (activeMessage < currentMessages.Length)
         {
             DisplayMessage();

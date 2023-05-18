@@ -22,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
     //While detected if we interact start the dialogue
     private void Update()
     {
-        if(dialogueManager.indicator.activeInHierarchy && Input.GetKeyDown(KeyCode.F))
+        if(dialogueManager.indicator.activeInHierarchy && Input.GetKeyDown(KeyCode.F) && !dialogueManager.isActive)
         {
             dialogueManager.OpenDialogue(messages);
         }
