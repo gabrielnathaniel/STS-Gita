@@ -4,36 +4,41 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogueScript;
-    private bool playerDetected;
+    public DialogueManager dialogueManager;
+    public Message[] messages;
+    public Actor[] actors;
 
-    //Detect trigger with player
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void ShowDialogueIndicator()
     {
-        //If we triggerd the player enable playerdeteced and show indicator
-        if(collision.tag == "Player")
-        {
-            playerDetected = true;
-            dialogueScript.ToggleIndicator(playerDetected);
-        }
+        // indicator.SetActive(true);
+       dialogueManager.indicator.SetActive(true);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    public void HideDialogueIndicator()
     {
-        //If we lost trigger  with the player disable playerdeteced and hide indicator
-        if (collision.tag == "Player")
-        {
-            playerDetected = false;
-            dialogueScript.ToggleIndicator(playerDetected);
-            dialogueScript.EndDialogue();
-        }
+        // indicator.SetActive(false);
+        dialogueManager.indicator.SetActive(false);
     }
+
     //While detected if we interact start the dialogue
     private void Update()
     {
-        if(playerDetected && Input.GetKeyDown(KeyCode.F))
+        if(dialogueManager.indicator.activeInHierarchy && Input.GetKeyDown(KeyCode.F) && !dialogueManager.isActive)
         {
-            dialogueScript.StartDialogue();
+            dialogueManager.OpenDialogue(messages, actors);
         }
     }
+}
+
+[System.Serializable]
+public class Message 
+{
+    public string message;
+    public int actorId;
+}
+
+[System.Serializable]
+public class Actor 
+{
+    public GameObject box;
 }

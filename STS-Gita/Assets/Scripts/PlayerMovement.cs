@@ -66,6 +66,8 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (FindObjectOfType<DialogueManager>().isActive == true)
+			return;
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
