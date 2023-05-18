@@ -9634,7 +9634,7 @@ MonoBehaviour:
   messages:
   - message: Suka Gita berponi juga a?
     actorId: 1
-  - message: Iya a. Tapi Gita nggak merayakan lebaran
+  - message: Iya a. Tapi Gita merayakan lebaran nggak ya?
     actorId: 0
 --- !u!61 &944205295
 BoxCollider2D:
@@ -10615,6 +10615,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141147451}
   m_CullTransparentMesh: 1
+--- !u!1 &1149520995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
+  m_PrefabInstance: {fileID: 407118031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1149520996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149520995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 1139737954}
+  FixScale: 0.75
 --- !u!1 &1158992799
 GameObject:
   m_ObjectHideFlags: 0

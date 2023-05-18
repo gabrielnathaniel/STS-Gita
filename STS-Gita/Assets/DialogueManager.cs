@@ -14,11 +14,11 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        // indicator.SetActive(false);
-        // foreach (GameObject box in boxes)
-        // {
-        //     box.SetActive(false);
-        // }
+        indicator.SetActive(false);
+        foreach (GameObject box in boxes)
+        {
+            box.SetActive(false);
+        }
     }
 
     public void OpenDialogue(Message[] messages) 
@@ -28,7 +28,6 @@ public class DialogueManager : MonoBehaviour
         activeMessage = 0;
         isActive = true;
         boxes[currentMessages[activeMessage].actorId].SetActive(true);
-        boxes[0].SetActive(true);
 
         Debug.Log("Conversation Started" + currentMessages.Length);
         DisplayMessage();

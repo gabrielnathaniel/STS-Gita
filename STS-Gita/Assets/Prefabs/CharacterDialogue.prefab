@@ -286,8 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6125d5adeb5b0469089d608c614fa9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 4715033624236595722}
-  box: {fileID: 4715033625648482671}
+  boxes: []
   indicator: {fileID: 437203488262671113}
 --- !u!1 &4715033625399065450
 GameObject:
