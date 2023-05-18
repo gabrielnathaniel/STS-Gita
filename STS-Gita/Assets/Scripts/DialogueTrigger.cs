@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public DialogueManager dialogueManager;
     public Message[] messages;
+    public Actor[] actors;
 
     public void ShowDialogueIndicator()
     {
@@ -24,7 +25,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if(dialogueManager.indicator.activeInHierarchy && Input.GetKeyDown(KeyCode.F) && !dialogueManager.isActive)
         {
-            dialogueManager.OpenDialogue(messages);
+            dialogueManager.OpenDialogue(messages, actors);
         }
     }
 }
@@ -34,4 +35,10 @@ public class Message
 {
     public string message;
     public int actorId;
+}
+
+[System.Serializable]
+public class Actor 
+{
+    public GameObject box;
 }

@@ -8398,6 +8398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 0}
   messages: []
+  actors: []
 --- !u!61 &778868167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9652,6 +9653,9 @@ MonoBehaviour:
     actorId: 1
   - message: Iya a. Tapi Gita merayakan lebaran nggak ya?
     actorId: 0
+  actors:
+  - box: {fileID: 1728881820}
+  - box: {fileID: 2128166061}
 --- !u!61 &944205295
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14771,6 +14775,9 @@ MonoBehaviour:
     actorId: 1
   - message: Apa kabar?
     actorId: 0
+  actors:
+  - box: {fileID: 1728881820}
+  - box: {fileID: 2113603416}
 --- !u!114 &2136946434
 MonoBehaviour:
   m_ObjectHideFlags: 0

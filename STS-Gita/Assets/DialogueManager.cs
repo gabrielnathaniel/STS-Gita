@@ -5,29 +5,21 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public GameObject[] boxes;
     public GameObject indicator;
 
     Message[] currentMessages;
+    Actor[] currentActors;
     int activeMessage = 0;
     public bool isActive = false;
 
-    private void Awake()
-    {
-        indicator.SetActive(false);
-        foreach (GameObject box in boxes)
-        {
-            box.SetActive(false);
-        }
-    }
-
-    public void OpenDialogue(Message[] messages) 
+    public void OpenDialogue(Message[] messages, Actor[] actors) 
     {
         indicator.SetActive(false);
         currentMessages = messages;
+        currentActors = actors;
         activeMessage = 0;
         isActive = true;
-        boxes[currentMessages[activeMessage].actorId].SetActive(true);
+        actors[currentMessages[activeMessage].actorId].box.SetActive(true);
 
         Debug.Log("Conversation Started" + currentMessages.Length);
         DisplayMessage();
@@ -35,9 +27,9 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        foreach (GameObject box in boxes)
+        foreach (Actor actor in currentActors)
         {
-            box.SetActive(false);
+            actor.box.SetActive(false);
         }
         isActive = false;
     }
@@ -46,10 +38,12 @@ public class DialogueManager : MonoBehaviour
     {
         Message messageToDisplay = currentMessages[activeMessage];
         int actorId = messageToDisplay.actorId;
-        GameObject activeBox = boxes[actorId];
-        foreach (GameObject box in boxes)
+        Actor actorToDisplay = currentActors[actorId];
+
+        GameObject activeBox = actorToDisplay.box;
+        foreach (Actor actor in currentActors)
         {
-            box.SetActive(false);
+            actor.box.SetActive(false);
         }
         activeBox.SetActive(true);
 
