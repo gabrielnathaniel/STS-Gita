@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Used to fix flipped dialog when character is flipped
 public class FixedScale : MonoBehaviour
 {
     public GameObject parent;
