@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+	public Animator animator;
 
 	public int health = 100;
 
@@ -14,7 +15,8 @@ public class PlayerHealth : MonoBehaviour
 	{
 		health -= damage;
 
-		StartCoroutine(DamageAnimation());
+		// StartCoroutine(DamageAnimation());
+		DamageAnimation();
 
 		// if (health <= 0)
 		// {
@@ -27,30 +29,34 @@ public class PlayerHealth : MonoBehaviour
 	// 	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	// }
 
-	IEnumerator DamageAnimation()
+	// IEnumerator DamageAnimation()
+	void DamageAnimation()
 	{
 		SpriteRenderer[] srs = GetComponentsInChildren<SpriteRenderer>();
 
-		for (int i = 0; i < 3; i++)
-		{
-			foreach (SpriteRenderer sr in srs)
-			{
-				Color c = sr.color;
-				c.a = 0;
-				sr.color = c;
-			}
+		// Play hurt animation
+        animator.SetTrigger("Hurt");
 
-			yield return new WaitForSeconds(.1f);
+		// for (int i = 0; i < 3; i++)
+		// {
+		// 	foreach (SpriteRenderer sr in srs)
+		// 	{
+		// 		Color c = sr.color;
+		// 		c.a = 0;
+		// 		sr.color = c;
+		// 	}
 
-			foreach (SpriteRenderer sr in srs)
-			{
-				Color c = sr.color;
-				c.a = 1;
-				sr.color = c;
-			}
+		// 	yield return new WaitForSeconds(.1f);
 
-			yield return new WaitForSeconds(.1f);
-		}
+		// 	foreach (SpriteRenderer sr in srs)
+		// 	{
+		// 		Color c = sr.color;
+		// 		c.a = 1;
+		// 		sr.color = c;
+		// 	}
+
+		// 	yield return new WaitForSeconds(.1f);
+		// }
 	}
 
 }
