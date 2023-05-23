@@ -27,43 +27,43 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Attack();
-        // if(Time.time >= nextAttackTime)
-        // {
-        //     if(Input.GetKeyDown(KeyCode.Space))
-        //     {
-        //         Attack();
-        //         nextAttackTime = Time.time + 1f / attackRate;
-        //     }
-        // }
+        // Attack();
+        if(Time.time >= nextAttackTime)
+        {
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
+        }
     }
 
     void Attack()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            if(canReceiveInput)
-            {
-                inputReceived = true;
-                canReceiveInput = false;
-            }
-            else
-            {
-                return;
-            }
-        }
-
-        // // Play an attack animation
-        // animator.SetTrigger("Attack");
-
-        // // Detect enemies in range of attack
-        // Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        // // Damage them
-        // foreach(Collider2D enemy in hitEnemies)
+        // if(Input.GetKeyDown(KeyCode.Space))
         // {
-        //     enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+        //     if(canReceiveInput)
+        //     {
+        //         inputReceived = true;
+        //         canReceiveInput = false;
+        //     }
+        //     else
+        //     {
+        //         return;
+        //     }
         // }
+
+        // Play an attack animation
+        animator.SetTrigger("Attack");
+
+        // Detect enemies in range of attack
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        // Damage them
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+        }
     }
 
     public void InputManager()
