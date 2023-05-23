@@ -1500,6 +1500,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: writingSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: boxes.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1768,6 +1772,14 @@ PrefabInstance:
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: isActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: writingSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_RootOrder
@@ -10485,7 +10497,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1139737959}
   animator: {fileID: 1139737955}
+  rb: {fileID: 0}
   runSpeed: 35
+  tr: {fileID: 0}
 --- !u!114 &1139737959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12193,6 +12207,10 @@ PrefabInstance:
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: writingSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: box.Array.size
@@ -14596,7 +14614,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2136946427}
   animator: {fileID: 2136946430}
+  rb: {fileID: 0}
   runSpeed: 35
+  tr: {fileID: 0}
 --- !u!114 &2136946427
 MonoBehaviour:
   m_ObjectHideFlags: 0

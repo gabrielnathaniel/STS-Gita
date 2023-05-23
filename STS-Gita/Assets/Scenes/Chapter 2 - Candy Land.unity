@@ -565,6 +565,8 @@ MonoBehaviour:
   attackRange: 1.22
   attackDamage: 40
   attackRate: 2
+  canReceiveInput: 0
+  inputReceived: 0
 --- !u!114 &462165004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,8 +686,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529204713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.997043, y: -1.7, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalPosition: {x: -4.997043, y: -2, z: 0}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1918560548}
@@ -728,6 +730,8 @@ MonoBehaviour:
   attackRange: 1.3
   attackDamage: 40
   attackRate: 2
+  canReceiveInput: 0
+  inputReceived: 0
 --- !u!114 &529204719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6851,9 +6855,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885088562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.512495, y: -2.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 3.512495, y: -2.5, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8

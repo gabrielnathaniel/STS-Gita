@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	private bool canDash = true;
 	private bool isDashing;
-	private float dashingPower = 12f;
+	private float dashingPower = 15f;
 	private float dashingTime = 0.2f;
 	private float dashingCooldown = 1f;
 
@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
 		// if (FindObjectOfType<DialogueManager>().isActive == true)
 		// 	return;
+
 		if(isDashing)
 		{
 			return;
