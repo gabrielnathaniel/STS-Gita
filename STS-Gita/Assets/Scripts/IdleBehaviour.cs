@@ -13,26 +13,27 @@ public class IdleBehaviour : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if(PlayerCombat.instance.inputReceived)
+        if(PlayerCombat.instance.isAttacking)
         {
-            animator.SetTrigger("AttackOne");
+            PlayerCombat.instance.animator.Play("Gita_Isekai_Attack1");
 
             // Detect enemies in range of attack
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(PlayerCombat.instance.attackPoint.position, PlayerCombat.instance.attackRange, PlayerCombat.instance.enemyLayers);
 
             // Damage them
             foreach(Collider2D enemy in hitEnemies)
-
-            PlayerCombat.instance.InputManager();
-            PlayerCombat.instance.inputReceived = false;
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(PlayerCombat.instance.attackDamage);
+            }
+            
         }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        PlayerCombat.instance.isAttacking = false;
+    }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

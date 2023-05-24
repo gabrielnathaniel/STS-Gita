@@ -16,65 +16,50 @@ public class PlayerCombat : MonoBehaviour
     float nextAttackTime = 0f;
 
     public static PlayerCombat instance;
-    public bool canReceiveInput;
-    public bool inputReceived;
+    public bool isAttacking;
+    // public bool canReceiveInput;
+    // public bool inputReceived;
 
     void Awake()
     {
         instance = this;
     }
 
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        // Attack();
-        if(Time.time >= nextAttackTime)
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                Attack();
-                nextAttackTime = Time.time + 1f / attackRate;
-            }
-        }
+        Attack();
+        // if(Time.time >= nextAttackTime)
+        // {
+        //     if(Input.GetKeyDown(KeyCode.Space))
+        //     {
+        //         Attack();
+        //         nextAttackTime = Time.time + 1f / attackRate;
+        //     }
+        // }
     }
 
     void Attack()
     {
-        // if(Input.GetKeyDown(KeyCode.Space))
+        // // Play an attack animation
+        // animator.SetTrigger("Attack");
+
+        // // Detect enemies in range of attack
+        // Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        // // Damage them
+        // foreach(Collider2D enemy in hitEnemies)
         // {
-        //     if(canReceiveInput)
-        //     {
-        //         inputReceived = true;
-        //         canReceiveInput = false;
-        //     }
-        //     else
-        //     {
-        //         return;
-        //     }
+        //     enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         // }
-
-        // Play an attack animation
-        animator.SetTrigger("Attack");
-
-        // Detect enemies in range of attack
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        // Damage them
-        foreach(Collider2D enemy in hitEnemies)
+        if(Input.GetKeyDown(KeyCode.Space) && !isAttacking)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-        }
-    }
-
-    public void InputManager()
-    {
-        if(!canReceiveInput)
-        {
-            canReceiveInput = true;
-        }
-        else
-        {
-            canReceiveInput = false;
+            isAttacking = true;
         }
     }
 
