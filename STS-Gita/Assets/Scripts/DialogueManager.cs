@@ -6,20 +6,26 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public GameObject indicator;
-
+    public float textSpeed = 0.05f;
     Message[] currentMessages;
     Actor[] currentActors;
-    int activeMessage = 0;
+    int index = 0;
     public bool isActive = false;
+
+    private Message activeMessage;
+    private int activeActorId;
+    private Actor activeActor;
+    private GameObject activeBox;
+    private Text textComponent;
 
     public void OpenDialogue(Message[] messages, Actor[] actors) 
     {
         indicator.SetActive(false);
         currentMessages = messages;
         currentActors = actors;
-        activeMessage = 0;
+        index = 0;
         isActive = true;
-        actors[currentMessages[activeMessage].actorId].box.SetActive(true);
+        actors[currentMessages[index].actorId].box.SetActive(true);
 
         Debug.Log("Conversation Started" + currentMessages.Length);
         DisplayMessage();
@@ -36,24 +42,26 @@ public class DialogueManager : MonoBehaviour
 
     void DisplayMessage() 
     {
-        Message messageToDisplay = currentMessages[activeMessage];
-        int actorId = messageToDisplay.actorId;
-        Actor actorToDisplay = currentActors[actorId];
+        activeMessage = currentMessages[index];
+        activeActorId = activeMessage.actorId;
+        activeActor = currentActors[activeActorId];
 
-        GameObject activeBox = actorToDisplay.box;
+        activeBox = activeActor.box;
         foreach (Actor actor in currentActors)
         {
             actor.box.SetActive(false);
         }
         activeBox.SetActive(true);
 
-        activeBox.transform.Find("DialogueBox/DialogueText").GetComponent<Text>().text = messageToDisplay.message;
+        textComponent = activeBox.transform.Find("DialogueBox/DialogueText").GetComponent<Text>();
+        textComponent.text = string.Empty;
+        StartCoroutine(TypeLine(activeMessage, textComponent));
     }
 
     void NextMessage()
     {
-        activeMessage++;
-        if (activeMessage < currentMessages.Length)
+        index++;
+        if (index < currentMessages.Length)
         {
             DisplayMessage();
         }
@@ -75,8 +83,25 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && isActive)
         {
-            NextMessage();
+            if (textComponent.text == activeMessage.message)
+            {
+                NextMessage();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = activeMessage.message;
+            }
         }
         
+    }
+
+    IEnumerator TypeLine(Message message, Text text)
+    {
+        foreach(char c in message.message.ToCharArray())
+        {
+            text.text += c;
+            yield return new WaitForSeconds(textSpeed);
+        }
     }
 }
