@@ -43,6 +43,6 @@ public class SceneFader : MonoBehaviour
             yield return 0;
         }
 
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadSceneAsync(scene);
     }
 }

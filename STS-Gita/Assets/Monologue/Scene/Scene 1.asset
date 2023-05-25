@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Scene 1
   m_EditorClassIdentifier: 
   sentences:
-  - text: Di suatu kota, hiduplah seorang anak laki-laki bernama Toni. Yang selalu
-      ditemani oleh kucing kesayangannya, Biru.
+  - text: Hidup sebatang kara tidaklah semenyedihkan itu jika kamu punya teman.
+  - text: Inilah teman yang sudah menemaniku di kala sepi. Kucing oren lincah bernama
+      Biru.
+  - text: Di sebelahnya itu aku, Tomi.
   background: {fileID: 21300000, guid: 172f23000b8fa624c9eb24c192fa2c1d, type: 3}
   nextScene: {fileID: 11400000, guid: 941271e16989cdf4ebbbbbf076dda9e2, type: 2}

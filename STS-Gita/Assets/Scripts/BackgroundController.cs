@@ -10,17 +10,21 @@ public class BackgroundController : MonoBehaviour
     public Image background2;
     public Animator animator;
 
+    int index = 1;
+
     public void SwitchImage(Sprite sprite)
     {
         if(!isSwitched)
         {
-            background2.Sprite = sprite;
-            animator.SetTrigger("SwitchFirst");
+            background2.sprite = sprite;
+            animator.SetTrigger("Switch" + index.ToString());
+            index++;
         }
         else
         {
             background1.sprite = sprite;
-            animator.SetTrigger("SwitchSecond");
+            animator.SetTrigger("Switch" + index.ToString());
+            index++;
         }
         isSwitched = !isSwitched;
     }
@@ -29,7 +33,7 @@ public class BackgroundController : MonoBehaviour
     {
         if(!isSwitched)
         {
-            background1.Sprite = sprite;
+            background1.sprite = sprite;
         }
         else
         {

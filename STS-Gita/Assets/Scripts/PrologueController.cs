@@ -27,7 +27,10 @@ public class PrologueController : MonoBehaviour
                     monologueBox.PlayScene(currentScene);
                     backgroundController.SwitchImage(currentScene.background);
                 }
-                monologueBox.PlayNextSentence();
+                else
+                {
+                    monologueBox.PlayNextSentence();
+                }
             }
         }
     }

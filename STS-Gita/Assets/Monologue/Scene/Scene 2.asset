@@ -15,5 +15,6 @@ MonoBehaviour:
   sentences:
   - text: Biru merupakan kucing yang sangat aktif. Lebih memilih berkeliaran dibandingkan
       tidur siang di tempat tidurnya.
+  - text: Gak ada capeknya. Justru kita yang capek melihatnya.
   background: {fileID: 21300000, guid: 6520255708ee35e4eadba78e4855ec63, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 9544e7807fab7394cb572c203b62fd1c, type: 2}
