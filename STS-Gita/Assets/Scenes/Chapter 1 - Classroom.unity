@@ -14789,14 +14789,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1608324943}
   messages:
-  - message: Test
+  - message: Itu Dimas kelihatan sibuk banget.
     actorId: 0
-  - message: Halo halo
-    actorId: 1
-  - message: Apa kabar?
+  - message: Coba tanyain deh.
     actorId: 0
   actors:
-  - box: {fileID: 1728881820}
   - box: {fileID: 2113603416}
 --- !u!114 &2136946434
 MonoBehaviour:
