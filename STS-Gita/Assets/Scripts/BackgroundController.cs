@@ -12,6 +12,13 @@ public class BackgroundController : MonoBehaviour
 
     int index = 1;
 
+    public AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void SwitchImage(Sprite sprite)
     {
         if(!isSwitched)
@@ -39,5 +46,10 @@ public class BackgroundController : MonoBehaviour
         {
             background2.sprite = sprite;
         }
+    }
+
+    public void PlaySound()
+    {
+        audioSource.Play();
     }
 }
