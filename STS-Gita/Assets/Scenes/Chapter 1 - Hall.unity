@@ -6250,6 +6250,7 @@ GameObject:
   - component: {fileID: 2136946428}
   - component: {fileID: 2136946427}
   - component: {fileID: 2136946426}
+  - component: {fileID: 2136946433}
   m_Layer: 7
   m_Name: Gita
   m_TagString: Player
@@ -6432,3 +6433,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136946433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136946425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c882bb5530c8b4cb28014da5322087cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  targetDistance: 4
+  player: {fileID: 1139737954}
