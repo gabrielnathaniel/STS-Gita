@@ -10225,6 +10225,7 @@ GameObject:
   - component: {fileID: 1139737960}
   - component: {fileID: 1139737959}
   - component: {fileID: 1139737958}
+  - component: {fileID: 1139737962}
   m_Layer: 7
   m_Name: Tomi
   m_TagString: Player
@@ -10407,6 +10408,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1139737962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139737954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58a6ebf6591c4eaa97e5db6d0b456c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1141147451
 GameObject:
   m_ObjectHideFlags: 0
@@ -14559,7 +14572,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   targetDistance: 2.5
-  playerTransform: {fileID: 0}
   player: {fileID: 1139737954}
 --- !u!1 &2144065458
 GameObject:

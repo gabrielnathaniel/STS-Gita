@@ -23,12 +23,17 @@ public class CharacterController2D : MonoBehaviour
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
 
+	private Camera camera;
+	private float screenBorder = 48f;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
+		
+		camera = Camera.main;
 	}
 
 	private void FixedUpdate()
@@ -83,6 +88,8 @@ public class CharacterController2D : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
+
+		PreventPlayerGoingOffScreen();
 	}
 
 
@@ -95,5 +102,15 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	private void PreventPlayerGoingOffScreen()
+	{
+		Vector2 screenPosition = camera.WorldToScreenPoint(transform.position);
+
+		if ((screenPosition.x < screenBorder && m_Rigidbody2D.velocity.x < 0) || (screenPosition.x > camera.pixelWidth - screenBorder && m_Rigidbody2D.velocity.x > 0))
+		{
+			m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);	
+		}
 	}
 }
