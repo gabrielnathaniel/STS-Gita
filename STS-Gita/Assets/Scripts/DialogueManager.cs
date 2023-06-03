@@ -18,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     private GameObject activeBox;
     private Text textComponent;
 
+    [SerializeField] private AudioClip sound;
+
     public void OpenDialogue(Message[] messages, Actor[] actors) 
     {
         indicator.SetActive(false);
@@ -38,6 +40,7 @@ public class DialogueManager : MonoBehaviour
             actor.box.SetActive(false);
         }
         isActive = false;
+        SoundManager.instance.StopSound();
     }
 
     void DisplayMessage() 
@@ -55,6 +58,7 @@ public class DialogueManager : MonoBehaviour
 
         textComponent = activeBox.transform.Find("DialogueBox/DialogueText").GetComponent<Text>();
         textComponent.text = string.Empty;
+        SoundManager.instance.PlaySound(sound);
         StartCoroutine(TypeLine(activeMessage, textComponent));
     }
 
@@ -72,12 +76,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -91,6 +89,7 @@ public class DialogueManager : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = activeMessage.message;
+                SoundManager.instance.StopSound();
             }
         }
         
@@ -103,5 +102,6 @@ public class DialogueManager : MonoBehaviour
             text.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+        SoundManager.instance.StopSound();
     }
 }
