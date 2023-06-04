@@ -9,6 +9,9 @@ public class MonologueController : MonoBehaviour
 
     private int sentenceIndex = -1;
     public Monologue currentScene;
+
+    [SerializeField] private AudioClip sound;
+
     private State state = State.COMPLETED;
 
     private enum State
@@ -26,6 +29,10 @@ public class MonologueController : MonoBehaviour
     // Start is called before the first frame update
     public void PlayNextSentence()
     {
+        if(currentScene.nextScene != null)
+        {
+            SoundManager.instance.PlaySound(sound);   
+        }
         StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
     }
 
@@ -52,6 +59,7 @@ public class MonologueController : MonoBehaviour
             if(++wordIndex == text.Length)
             {
                 state = State.COMPLETED;
+                SoundManager.instance.StopSound();
                 break;
             }
         }

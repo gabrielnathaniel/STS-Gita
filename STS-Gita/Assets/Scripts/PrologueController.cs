@@ -28,6 +28,7 @@ public class PrologueController : MonoBehaviour
                 {
                     if(currentScene.nextScene == null)
                     {
+                        SoundManager.instance.StopSound();
                         sceneFader.FadeTo(sceneToLoad);
                     }
                     currentScene = currentScene.nextScene;

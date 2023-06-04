@@ -20,6 +20,8 @@ public class CutsceneDialogueManager : MonoBehaviour
     private GameObject activeBox;
     private Text textComponent;
 
+    [SerializeField] private AudioClip sound;
+
     public void StartDialogue()
     {
         Debug.Log("Should start cutscene Dialog");
@@ -36,6 +38,7 @@ public class CutsceneDialogueManager : MonoBehaviour
         }
         isActive = false;
         timeline.Resume();
+        SoundManager.instance.StopSound();
     }
 
     void DisplayMessage() 
@@ -55,6 +58,7 @@ public class CutsceneDialogueManager : MonoBehaviour
 
         textComponent = activeBox.transform.Find("DialogueBox/DialogueText").GetComponent<Text>();
         textComponent.text = string.Empty;
+        SoundManager.instance.PlaySound(sound);
         StartCoroutine(TypeLine(activeMessage, textComponent));
     }
 
@@ -91,6 +95,7 @@ public class CutsceneDialogueManager : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = activeMessage.message;
+                SoundManager.instance.StopSound();
             }
         }
         
@@ -103,5 +108,6 @@ public class CutsceneDialogueManager : MonoBehaviour
             text.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+        SoundManager.instance.StopSound();
     }
 }
