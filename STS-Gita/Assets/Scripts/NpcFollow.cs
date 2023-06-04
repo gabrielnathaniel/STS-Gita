@@ -35,10 +35,10 @@ public class NpcFollow : MonoBehaviour
 
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
-        // else
-        // {
-        //     animator.SetBool("isWalking", false);
-        // }
+        else if (player.GetComponent<Animator>().GetFloat("Speed") <= 0f)
+        {
+            animator.SetFloat("Speed", 0f);
+        }
     }
 
     void FlipSprite()
