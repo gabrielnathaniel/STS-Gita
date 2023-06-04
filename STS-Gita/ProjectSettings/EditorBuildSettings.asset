@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Prolog.unity
     guid: 17e1a9b1d8fc43f44848280b06f0e9fb
   - enabled: 1
+    path: Assets/Scenes/PrologCreditScene.unity
+    guid: b1a34c8b03733924d9c1ef9c5dcc1573
+  - enabled: 1
     path: Assets/Scenes/Chapter 1 - Hall.unity
     guid: 04d1a316f4c66c547bbe9ce9effb237e
   - enabled: 1

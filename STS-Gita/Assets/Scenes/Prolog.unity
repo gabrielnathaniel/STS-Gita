@@ -180,6 +180,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
+--- !u!114 &344862020 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5346902485403562775, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
+  m_PrefabInstance: {fileID: 344862019}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37d51ab33ce8c814aa66a78d9c30d341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &877816257
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,9 +629,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445471c649c1fb1409f5925f180ad465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneFader: {fileID: 344862020}
   currentScene: {fileID: 11400000, guid: 684ad3e85ab664b41bd7b8a35b057743, type: 2}
   monologueBox: {fileID: 1358042572}
   backgroundController: {fileID: 877816260}
+  sceneToLoad: PrologCreditScene
 --- !u!1 &1370625204
 GameObject:
   m_ObjectHideFlags: 0

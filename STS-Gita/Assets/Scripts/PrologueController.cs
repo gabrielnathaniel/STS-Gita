@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PrologueController : MonoBehaviour
 {
+    public SceneFader sceneFader;
     public Monologue currentScene;
     public MonologueController monologueBox;
     public BackgroundController backgroundController;
+
+    public string sceneToLoad = "PrologCreditScene";
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,10 @@ public class PrologueController : MonoBehaviour
             {
                 if(monologueBox.IsLastSentence())
                 {
+                    if(currentScene.nextScene == null)
+                    {
+                        sceneFader.FadeTo(sceneToLoad);
+                    }
                     currentScene = currentScene.nextScene;
                     monologueBox.PlayScene(currentScene);
                     backgroundController.SwitchImage(currentScene.background);

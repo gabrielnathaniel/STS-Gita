@@ -6,7 +6,7 @@ public class DoorTrigger : MonoBehaviour
 {
     [SerializeField] GameObject playerDoorIndicator;
     public SceneFader sceneFader;
-    private string sceneToLoad = "Chapter 1 - Classroom";
+    public string sceneToLoad = "Chapter 1 - Classroom";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

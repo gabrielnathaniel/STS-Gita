@@ -46,12 +46,12 @@ public class NpcFollow : MonoBehaviour
         if (player.transform.position.x > transform.position.x)
         {
             // Face right
-            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            transform.localScale = new Vector3(1.7f, 1.7f, 1.7f);
         }   
         else
         {
             // Face left
-            transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
+            transform.localScale = new Vector3(-1.7f, 1.7f, 1.7f);
         }
     }
 }
