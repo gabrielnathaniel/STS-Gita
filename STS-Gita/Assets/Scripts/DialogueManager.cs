@@ -18,6 +18,10 @@ public class DialogueManager : MonoBehaviour
     private GameObject activeBox;
     private Text textComponent;
 
+    public bool isMinigame = false;
+
+    public Canvas minigame1;
+
     [SerializeField] private AudioClip sound;
 
     public void OpenDialogue(Message[] messages, Actor[] actors) 
@@ -41,6 +45,11 @@ public class DialogueManager : MonoBehaviour
         }
         isActive = false;
         SoundManager.instance.StopSound();
+
+        if(isMinigame == true)
+        {
+            minigame1.gameObject.SetActive(true);
+        }
     }
 
     void DisplayMessage() 
