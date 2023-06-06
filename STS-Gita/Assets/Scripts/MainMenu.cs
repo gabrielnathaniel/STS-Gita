@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public string sceneToLoad = "LevelSelect";
+    public string sceneToLoad = "PrologOpening";
 
     public SceneFader sceneFader;
 

@@ -1197,7 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2683d9ee4b7793d4785b6b3f4a50f1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Prolog
+  sceneToLoad: PrologOpening
   sceneFader: {fileID: 1893689454}
 --- !u!1001 &2545275165535883936
 PrefabInstance:
