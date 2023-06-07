@@ -198,7 +198,6 @@ GameObject:
   - component: {fileID: 97580262}
   - component: {fileID: 97580261}
   - component: {fileID: 97580260}
-  - component: {fileID: 97580263}
   m_Layer: 0
   m_Name: Gita
   m_TagString: Untagged
@@ -265,8 +264,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97580256}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -1.96, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9, y: -1.96, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -301,7 +300,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97580256}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c882bb5530c8b4cb28014da5322087cc, type: 3}
   m_Name: 
@@ -356,23 +355,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!320 &97580263
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97580256}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &162701367
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,13 +636,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514056893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.033444285, y: 0.067840815}
+  m_Offset: {x: -0.3591855, y: 0.067840815}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -671,7 +653,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3981245, y: 2.2194343}
+  m_Size: {x: 1.7466421, y: 2.2194343}
   m_EdgeRadius: 0
 --- !u!50 &514056896
 Rigidbody2D:
@@ -893,7 +875,7 @@ Transform:
   m_Children:
   - {fileID: 1449362734}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &694149578 stripped
 GameObject:
@@ -5824,7 +5806,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 716234959}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &814238075
+--- !u!1 &878516792
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5832,162 +5814,103 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 814238077}
-  - component: {fileID: 814238076}
-  - component: {fileID: 814238078}
-  - component: {fileID: 814238081}
-  - component: {fileID: 814238079}
+  - component: {fileID: 878516794}
+  - component: {fileID: 878516793}
+  - component: {fileID: 878516795}
   m_Layer: 0
-  m_Name: SadSaskia
+  m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!320 &814238076
-PlayableDirector:
+--- !u!212 &878516793
+SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814238075}
+  m_GameObject: {fileID: 878516792}
   m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: d6c2c62acf14313459d4ec18b6d68ee7, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 0}
-    value: {fileID: 1139737955}
-  - key: {fileID: 0}
-    value: {fileID: 97580259}
-  - key: {fileID: 0}
-    value: {fileID: 278020547}
-  - key: {fileID: 0}
-    value: {fileID: 912088512}
-  - key: {fileID: 7379352466777458539, guid: d6c2c62acf14313459d4ec18b6d68ee7, type: 2}
-    value: {fileID: 1139737955}
-  - key: {fileID: 7853636830803152280, guid: d6c2c62acf14313459d4ec18b6d68ee7, type: 2}
-    value: {fileID: 97580259}
-  - key: {fileID: 8979508827605994701, guid: d6c2c62acf14313459d4ec18b6d68ee7, type: 2}
-    value: {fileID: 278020547}
-  - key: {fileID: -5168219268702434038, guid: d6c2c62acf14313459d4ec18b6d68ee7, type: 2}
-    value: {fileID: 912088512}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &814238077
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -158047845
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &878516794
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814238075}
+  m_GameObject: {fileID: 878516792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5208548, y: 1.1175921, z: -99.410805}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 13.155, y: -1.032, z: 0}
+  m_LocalScale: {x: 0.56, y: 0.56, z: 0.56}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &814238078
-MonoBehaviour:
+--- !u!95 &878516795
+Animator:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814238075}
+  m_GameObject: {fileID: 878516792}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - message: 'Bener-bener deh hari ini, hampir aja telat sampai sekolah. '
-    actorId: 0
-  - message: Gara-gara truk mogok di jalan nih tadi.
-    actorId: 0
-  - message: Hahaha... kamu juga sih bangunnya kesiangan, jadi papasan sama truk
-      mogok.
-    actorId: 1
-  actors:
-  - box: {fileID: 1896123845}
-  - box: {fileID: 886716221}
-  timeline: {fileID: 814238076}
-  isActive: 0
-  textSpeed: 0.05
-  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
---- !u!114 &814238079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814238075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: c6796afd9c8724b4ea34a88e0b575fe3, type: 2}
-    - {fileID: 11400000, guid: 5d8dfc9668c0ffd42878ffb0725756fd, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 814238078}
-          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
-          m_MethodName: StartDialogue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 814238081}
-          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
-          m_MethodName: StartDialogue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &814238081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814238075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - message: Eh itu si Saskia kenapa murung banget ya?
-    actorId: 0
-  - message: Coba kita samperin yuk!
-    actorId: 1
-  actors:
-  - box: {fileID: 886716221}
-  - box: {fileID: 1896123845}
-  timeline: {fileID: 814238076}
-  isActive: 0
-  textSpeed: 0.05
-  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &886716221 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -6207,7 +6130,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912088507}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8c18461a8d645540baa655e5f57493c, type: 3}
   m_Name: 
@@ -6341,7 +6264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139737954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -1.7, z: 0}
+  m_LocalPosition: {x: 11, y: -1.7, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6916,11 +6839,19 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 04a60d323a63bcc4ba10c9237e5f9a00, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: 255243964283008862, guid: 04a60d323a63bcc4ba10c9237e5f9a00, type: 2}
+    value: {fileID: 1139737955}
+  - key: {fileID: 1131964239838698116, guid: 04a60d323a63bcc4ba10c9237e5f9a00, type: 2}
+    value: {fileID: 97580259}
+  - key: {fileID: -7044657469813240500, guid: 04a60d323a63bcc4ba10c9237e5f9a00, type: 2}
+    value: {fileID: 514056897}
+  - key: {fileID: -903962768915887091, guid: 04a60d323a63bcc4ba10c9237e5f9a00, type: 2}
+    value: {fileID: 878516795}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1846734603
@@ -6936,7 +6867,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1846734604
 MonoBehaviour:

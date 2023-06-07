@@ -816,7 +816,7 @@ MonoBehaviour:
     actorId: 2
   - message: Tetapi kemarin sesuatu terjadi..
     actorId: 2
-  - message: Aku sangat percaya diri dengan kemampuan menariku.
+  - message: Sebenarnya aku sangat percaya diri dengan kemampuan menariku.
     actorId: 2
   - message: Ya, kami tahu betul bahwa kamu adalah pentolan sekolah ini dalam hal
       menari!
@@ -5826,7 +5826,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: d6c2c62acf14313459d4ec18b6d68ee7, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
