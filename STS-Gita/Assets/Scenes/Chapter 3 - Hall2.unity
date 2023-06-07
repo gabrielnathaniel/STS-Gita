@@ -863,6 +863,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 514056900}
+--- !u!1 &631098469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 631098470}
+  m_Layer: 0
+  m_Name: Pak Dewa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &631098470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631098469}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.84, y: -0.24, z: 119.44435}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1449362734}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &694149578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -5698,13 +5730,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: sceneFader
-      value: 
-      objectReference: {fileID: 414169461}
-    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: playableDirector
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1846734602}
     - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: isChapter3Cutscene
       value: 1
@@ -5826,7 +5854,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: d6c2c62acf14313459d4ec18b6d68ee7, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -6575,6 +6603,109 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 1427606283}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1449362733
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 631098470}
+    m_Modifications:
+    - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_Text
+      value: Yunan anjing
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3400002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -119.44435
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_Name
+      value: PakDewaDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: acfd51287ace6044bab3760953599449, type: 3}
+--- !u!4 &1449362734 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
+  m_PrefabInstance: {fileID: 1449362733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1449362735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
+  m_PrefabInstance: {fileID: 1449362733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1509682190 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -6756,6 +6887,119 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5346902485403562775, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
+--- !u!1 &1846734601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846734603}
+  - component: {fileID: 1846734602}
+  - component: {fileID: 1846734605}
+  - component: {fileID: 1846734604}
+  m_Layer: 0
+  m_Name: GitaPowerOnSaskia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &1846734602
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846734601}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 04a60d323a63bcc4ba10c9237e5f9a00, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1846734603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846734601}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.34972, y: -1.8801491, z: 119.44435}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846734604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846734601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c6796afd9c8724b4ea34a88e0b575fe3, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1846734605}
+          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
+          m_MethodName: StartDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1846734605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846734601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - message: Tomi, kamu bisa masuk ke kelas sebentar?
+    actorId: 0
+  - message: Baik, pak.
+    actorId: 1
+  - message: Teman-teman, aku ke Pak Dewa dulu ya, nanti aku balik lagi ke sini.
+    actorId: 1
+  - message: Oke Tom.
+    actorId: 2
+  - message: Oke Tom, terima kasih ya!
+    actorId: 3
+  actors:
+  - box: {fileID: 1449362735}
+  - box: {fileID: 1896123845}
+  - box: {fileID: 886716221}
+  - box: {fileID: 694149578}
+  timeline: {fileID: 1846734602}
+  isActive: 0
+  textSpeed: 0.05
+  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
 --- !u!1 &1896123845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}

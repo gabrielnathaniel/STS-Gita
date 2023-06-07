@@ -31,8 +31,17 @@ EditorBuildSettings:
     guid: 2b1dc0a1397c8ef4ea816a8ecb742148
   - enabled: 1
     path: Assets/Scenes/Chapter 2 - Canteen.unity
-    guid: 073d2ce947fb8784f896d7445bc3c834
+    guid: 15beff68434b80f4babc3e3d04ee0fe0
   - enabled: 1
     path: Assets/Scenes/Chapter 2 - Candy Land.unity
     guid: 8fb04efd7032b8c499970c1c72a6ef19
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 - Hall.unity
+    guid: 6e2829354c57e824daf556bc837f806d
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 - Hall2.unity
+    guid: d3f2be5345c1e3b4c8d83a74513c8910
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 - Theatre.unity
+    guid: 8caa546545fd28848b87302aa7783c75
   m_configObjects: {}

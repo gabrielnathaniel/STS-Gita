@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -20,7 +21,13 @@ public class DialogueManager : MonoBehaviour
 
     public bool isMinigame = false;
 
+    public bool isChapter3Cutscene = false;
+
     public Canvas minigame1;
+
+    public string sceneToLoad = "Chapter 3 - Hall2";
+
+    public SceneFader sceneFader;
 
     [SerializeField] private AudioClip sound;
 
@@ -49,6 +56,11 @@ public class DialogueManager : MonoBehaviour
         if(isMinigame == true)
         {
             minigame1.gameObject.SetActive(true);
+        }
+
+        if(isChapter3Cutscene == true)
+        {
+            sceneFader.FadeTo(sceneToLoad);
         }
     }
 
