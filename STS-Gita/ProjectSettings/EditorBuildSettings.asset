@@ -36,6 +36,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 2 - Canteen2.unity
     guid: ecdb5aba59a61e146a21701600d7d156
   - enabled: 1
+    path: Assets/Scenes/Chapter 2 - Canteen3.unity
+    guid: cc2ec6842a8412c49a5477feb12bb333
+  - enabled: 1
+    path: Assets/Scenes/Chapter 2 - Canteen4.unity
+    guid: fa0af0749aa41124cbca572cb46acb72
+  - enabled: 1
     path: Assets/Scenes/Chapter 2 - Candy Land.unity
     guid: 8fb04efd7032b8c499970c1c72a6ef19
   - enabled: 1
