@@ -247,7 +247,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -439981898, guid: 3bb34b2f3bda4074c830b952e7fc2002, type: 3}
+  m_Sprite: {fileID: -1166784941, guid: 1b048d0cf413bcb4199501c32b12f43d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -326,7 +326,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.96}
+    oldSize: {x: 2.4, y: 2.56}
     newSize: {x: 2.4, y: 2.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 514056900}
   - component: {fileID: 514056901}
   m_Layer: 0
-  m_Name: Gita (1)
+  m_Name: Saskia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -664,7 +664,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.96}
+    oldSize: {x: 2.4, y: 2.56}
     newSize: {x: 2.4, y: 2.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -704,7 +704,7 @@ Animator:
   m_GameObject: {fileID: 514056893}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cd0ac0fedc02f6748b2c3190e391a33e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6ca19476754e8374f83efea369a18c18, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -755,7 +755,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -439981898, guid: 3bb34b2f3bda4074c830b952e7fc2002, type: 3}
+  m_Sprite: {fileID: -1392689282, guid: 7e1b71fdfd12a824f9416549c166d952, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6294,7 +6294,7 @@ SpriteRenderer:
   m_SortingLayerID: -1194566835
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -611284291, guid: af491eb557c39aa47b75d01d0becda3d, type: 3}
+  m_Sprite: {fileID: -683703222, guid: a5f1117254edfcd4991f3de4ea625bf3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
