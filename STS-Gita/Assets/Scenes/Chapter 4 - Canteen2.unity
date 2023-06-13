@@ -423,11 +423,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 407118031}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &407118033 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 407118031}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &414169461 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5346902485403562775, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
@@ -5377,160 +5372,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &776733871
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 776733873}
-  - component: {fileID: 776733872}
-  - component: {fileID: 776733874}
-  - component: {fileID: 776733875}
-  - component: {fileID: 776733876}
-  m_Layer: 0
-  m_Name: TomiCanteenScene
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &776733872
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776733871}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 63bbcb76cdadfe54e96fb55da6544075, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 4263868426615672339, guid: 63bbcb76cdadfe54e96fb55da6544075, type: 2}
-    value: {fileID: 1139737955}
-  - key: {fileID: 4937322888787121773, guid: 63bbcb76cdadfe54e96fb55da6544075, type: 2}
-    value: {fileID: 1648008596}
-  - key: {fileID: 7584805479457048471, guid: 63bbcb76cdadfe54e96fb55da6544075, type: 2}
-    value: {fileID: 912088512}
-  - key: {fileID: 975427536327946944, guid: 63bbcb76cdadfe54e96fb55da6544075, type: 2}
-    value: {fileID: 933502258}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &776733873
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776733871}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.780275, y: -0.79183584, z: -99.4037}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &776733874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776733871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - message: Ini nak, puding yang kamu pesan.
-    actorId: 0
-  - message: Terima kasih banyak ya, bu.
-    actorId: 1
-  actors:
-  - box: {fileID: 1158582620}
-  - box: {fileID: 1656302884}
-  timeline: {fileID: 776733872}
-  isActive: 0
-  textSpeed: 0.05
-  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
---- !u!114 &776733875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776733871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - message: (Kok Omar tiba-tiba bersikap baik ya?)
-    actorId: 0
-  - message: (Apa yang terjadi saat aku tidak sadarkan diri?)
-    actorId: 0
-  - message: (Aku harus mencari Gita.)
-    actorId: 0
-  actors:
-  - box: {fileID: 407118033}
-  timeline: {fileID: 776733872}
-  isActive: 0
-  textSpeed: 0.05
-  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
---- !u!114 &776733876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776733871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: c6796afd9c8724b4ea34a88e0b575fe3, type: 2}
-    - {fileID: 11400000, guid: b8ae1208b2f21154f9bf26c926f6788f, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 776733874}
-          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
-          m_MethodName: StartDialogue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 776733875}
-          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
-          m_MethodName: StartDialogue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &825800059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5913,7 +5754,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912088507}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8c18461a8d645540baa655e5f57493c, type: 3}
   m_Name: 
@@ -5922,7 +5763,7 @@ MonoBehaviour:
   yOffset: 1
   target: {fileID: 1139737957}
   leftLimit: 0
-  rightLimit: 10.5
+  rightLimit: 22.4
   topLimit: 0.02
   bottomLimit: 0.01
 --- !u!95 &912088512
@@ -5974,7 +5815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c34573194dd184cbdff359b3ddf4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Chapter 4 - Canteen2
+  sceneToLoad: Chapter 2 - Canteen2
   sceneFader: {fileID: 414169461}
 --- !u!4 &933502260
 Transform:
@@ -6157,7 +5998,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1194566835
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -683703222, guid: a5f1117254edfcd4991f3de4ea625bf3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6454,11 +6295,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acfd51287ace6044bab3760953599449, type: 3}
---- !u!1 &1158582620 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 1158582619}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1158582621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -7108,7 +6944,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1656302883
 PrefabInstance:
@@ -7207,11 +7043,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acfd51287ace6044bab3760953599449, type: 3}
---- !u!1 &1656302884 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 1656302883}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1656302885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -7264,7 +7095,7 @@ PrefabInstance:
       objectReference: {fileID: 414169461}
     - target: {fileID: 1881837450105951996, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: sceneToLoad
-      value: Chapter 4 - Canteen
+      value: Chapter 4 - Hall2
       objectReference: {fileID: 0}
     - target: {fileID: 1881837450105951996, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: playerDoorIndicator
@@ -7272,11 +7103,11 @@ PrefabInstance:
       objectReference: {fileID: 887765770}
     - target: {fileID: 1881837450105951998, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: m_Size.x
-      value: 2.7515202
+      value: 2.7697678
       objectReference: {fileID: 0}
     - target: {fileID: 1881837450105951998, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: m_Offset.x
-      value: 2.0029974
+      value: 1.9938736
       objectReference: {fileID: 0}
     - target: {fileID: 1881837450105951999, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: m_RootOrder
@@ -7284,7 +7115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1881837450105951999, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.95
+      value: 27.92
       objectReference: {fileID: 0}
     - target: {fileID: 1881837450105951999, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: m_LocalPosition.y
