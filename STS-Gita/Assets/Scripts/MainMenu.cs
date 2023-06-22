@@ -13,6 +13,11 @@ public class MainMenu : MonoBehaviour
         sceneFader.FadeTo(sceneToLoad);
     }
 
+    public void Load()
+    {
+        sceneFader.FadeTo("LevelSelect");
+    }
+
     public void Exit()
     {
         Debug.Log("Exiting...");
