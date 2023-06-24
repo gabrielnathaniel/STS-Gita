@@ -46,6 +46,14 @@ public class MonologueController : MonoBehaviour
         return sentenceIndex + 1 == currentScene.sentences.Count;
     }
 
+    public void CompleteSentence()
+    {
+        StopAllCoroutines();
+        monologueText.text = currentScene.sentences[sentenceIndex].text;
+        SoundManager.instance.StopSound();
+        state = State.COMPLETED;
+    }
+
     private IEnumerator TypeText(string text)
     {
         monologueText.text = "";

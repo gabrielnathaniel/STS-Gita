@@ -40,6 +40,10 @@ public class PrologueController : MonoBehaviour
                     monologueBox.PlayNextSentence();
                 }
             }
+            else 
+            {
+                monologueBox.CompleteSentence();
+            }
         }
     }
 }
