@@ -6,7 +6,7 @@ using UnityEngine;
 public class FixedScale : MonoBehaviour
 {
     public GameObject parent;
-    public float FixScale = 0.75f;
+    public float FixScale = 1f;
 
     // Update is called once per frame
     void Update()

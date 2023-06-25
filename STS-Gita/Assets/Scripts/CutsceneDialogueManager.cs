@@ -21,11 +21,13 @@ public class CutsceneDialogueManager : MonoBehaviour
     private Text textComponent;
 
     [SerializeField] private AudioClip sound;
+    [SerializeField] private PlayerMovement playerMovement;
 
     public void StartDialogue()
     {
         Debug.Log("Should start cutscene Dialog");
         isActive = true;
+        playerMovement.isInDialogue = true;
         timeline.Pause();
         DisplayMessage();
     }
@@ -37,6 +39,7 @@ public class CutsceneDialogueManager : MonoBehaviour
             actor.box.SetActive(false);
         }
         isActive = false;
+        playerMovement.isInDialogue = false;
         timeline.Resume();
         SoundManager.instance.StopSound();
     }
