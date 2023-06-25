@@ -12,14 +12,14 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
+        levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 0);
 
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].interactable = false;
         }
 
-        for (int i = 0; i < levelsUnlocked; i++)
+        for (int i = 0; i <= levelsUnlocked; i++)
         {
             buttons[i].interactable = true;
         }
@@ -31,13 +31,13 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    public static void CompleteLevel(int index)
+    public static void CompleteLevel(int levelNumber)
     {
-        int unlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
+        int unlocked = PlayerPrefs.GetInt("levelsUnlocked", 0);
 
-        if (index > unlocked)
+        if (levelNumber > unlocked)
         {
-            PlayerPrefs.SetInt("levelsUnlocked", index);
+            PlayerPrefs.SetInt("levelsUnlocked", levelNumber);
         } 
     }
 }
