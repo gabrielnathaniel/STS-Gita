@@ -11,6 +11,9 @@ public class FixedScale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector3(FixScale/parent.transform.localScale.x,FixScale/parent.transform.localScale.y,FixScale/parent.transform.localScale.z);
+        if (parent != null)
+        {
+            transform.localScale = new Vector3(FixScale/parent.transform.localScale.x,FixScale/parent.transform.localScale.y,FixScale/parent.transform.localScale.z);
+        }
     }
 }

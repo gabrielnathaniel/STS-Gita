@@ -504,8 +504,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1139737957}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1139737954}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -6208,6 +6216,8 @@ MonoBehaviour:
   animator: {fileID: 1139737955}
   rb: {fileID: 0}
   runSpeed: 35
+  isInDialogue: 0
+  timeline: {fileID: 1732594915}
   tr: {fileID: 0}
 --- !u!114 &1139737959
 MonoBehaviour:
@@ -6587,6 +6597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 81329463}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 81329461}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6693,10 +6707,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 97580258}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 97580256}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1139737958}
     - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_Text
       value: Yunan anjing
@@ -7066,6 +7088,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1161171666}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1161171664}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7258,6 +7284,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
+  playerMovement: {fileID: 1139737958}
 --- !u!114 &1732594918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7411,6 +7438,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
+  playerMovement: {fileID: 1139737958}
 --- !u!1 &2074910814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5346902486446347060, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
