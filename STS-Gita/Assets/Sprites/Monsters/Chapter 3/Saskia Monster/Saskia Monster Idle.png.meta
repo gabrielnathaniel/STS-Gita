@@ -101,30 +101,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -143,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b5cadc9a12a39b49be8b3c21a66fbfc
-      internalID: 495487931
+      spriteID: b5595df7a55f752458474237e348c758
+      internalID: 2074977930
       vertices: []
       indices: 
       edges: []
@@ -164,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c398250cfe86bda4fa3fd99b58055beb
-      internalID: -1527619315
+      spriteID: c1e8a1faa01aa384ab0940d0c8ae63be
+      internalID: -329993976
       vertices: []
       indices: 
       edges: []
@@ -181,8 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Saskia Monster Idle_1: -1527619315
-      Saskia Monster Idle_0: 495487931
+      Saskia Monster Idle_1: -329993976
+      Saskia Monster Idle_0: 2074977930
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -45,11 +45,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 2 - Candy Land.unity
     guid: 8fb04efd7032b8c499970c1c72a6ef19
   - enabled: 1
+    path: Assets/Scenes/Chapter 2 - Candy Land2.unity
+    guid: 0f455ab75057c0940bf89a58e8e2e667
+  - enabled: 1
+    path: Assets/Scenes/Chapter 2 - Candy Land3.unity
+    guid: 3bc85be1f52b3c348958bd1aed895df9
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 - Hall.unity
+    guid: e307c1b2a69bbbd4eb198bdc30605752
+  - enabled: 1
     path: Assets/Scenes/Chapter 3 - Hall2.unity
     guid: d3f2be5345c1e3b4c8d83a74513c8910
   - enabled: 1
     path: Assets/Scenes/Chapter 3 - Theatre.unity
     guid: 8caa546545fd28848b87302aa7783c75
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 - Theatre2.unity
+    guid: 3970a9963c83338469bf65691c20965e
+  - enabled: 1
+    path: Assets/Scenes/Chapter 3 - Theatre3.unity
+    guid: c55a028277f5f36459eb0010f43d7192
   - enabled: 1
     path: Assets/Scenes/Chapter 4 - Classroom.unity
     guid: f26b5e83ca7d18c49891fda8128bdad2
@@ -68,7 +83,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter 4 - Hall2.unity
     guid: 785e42a0abae6f34db27f99ba5f6afb9
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Chapter 5 - Classroom.unity
+    guid: 232219cec07d76744bd40c32c72c3436
+  - enabled: 1
+    path: Assets/Scenes/Chapter 5 - Tomi Isekai.unity
+    guid: 7b4f5f059039ae148adc716fb8cd527e
+  - enabled: 1
+    path: Assets/Scenes/Chapter 5 - Tomi Isekai2.unity
+    guid: 4c5f637192d0a7a4d8f25d88c551aed5
+  - enabled: 1
+    path: Assets/Scenes/Chapter 5 - Street.unity
+    guid: 3ce093dbb5dee1e46a5e5e9e602ce6ac
   m_configObjects: {}

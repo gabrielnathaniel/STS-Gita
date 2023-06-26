@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9f505dcca54342a4e9b5a546853d4e30
+guid: 6ddb142f583580f4dab513b599857881
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Saskia Monster Attack_0
+      name: Saskia Monster Hurt_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 344
-        height: 276
+        width: 240
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb3b5cb31957c042ac3d9b684d8db9c
-      internalID: -175973889
+      spriteID: 89fcfe2b0564aa24c994b6b548e05a3e
+      internalID: -1997209920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Saskia Monster Attack_1
+      name: Saskia Monster Hurt_1
       rect:
         serializedVersion: 2
-        x: 344
+        x: 240
         y: 0
-        width: 344
-        height: 276
+        width: 240
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fad4f1322ed3024468a8f5cc27b112e5
-      internalID: 1942529533
+      spriteID: 64629e97f17d9cb45a2996e297aab8f7
+      internalID: -904645791
       vertices: []
       indices: 
       edges: []
@@ -157,8 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Saskia Monster Attack_0: -175973889
-      Saskia Monster Attack_1: 1942529533
+      Saskia Monster Hurt_1: -904645791
+      Saskia Monster Hurt_0: -1997209920
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

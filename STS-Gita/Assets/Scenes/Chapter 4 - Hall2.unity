@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c34573194dd184cbdff359b3ddf4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Chapter 1 - Hall
+  sceneToLoad: Chapter 4 - Tomi Isekai
   sceneFader: {fileID: 414169461}
 --- !u!4 &36386702
 Transform:
@@ -6112,7 +6112,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.32, y: 2.64}
+    oldSize: {x: 2.12, y: 2.56}
     newSize: {x: 10.009776, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

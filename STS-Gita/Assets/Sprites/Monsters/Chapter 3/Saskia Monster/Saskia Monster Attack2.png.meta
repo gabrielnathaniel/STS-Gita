@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9f505dcca54342a4e9b5a546853d4e30
+guid: 887868b14590b7740bdae421b00b8a19
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Saskia Monster Attack_0
+      name: Saskia Monster Attack2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 344
-        height: 276
+        width: 276
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb3b5cb31957c042ac3d9b684d8db9c
-      internalID: -175973889
+      spriteID: 1a43c75b81812324899ab0a5631953fc
+      internalID: -34799965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Saskia Monster Attack_1
+      name: Saskia Monster Attack2_1
       rect:
         serializedVersion: 2
-        x: 344
+        x: 276
         y: 0
-        width: 344
-        height: 276
+        width: 276
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fad4f1322ed3024468a8f5cc27b112e5
-      internalID: 1942529533
+      spriteID: b88b94f1f8e7f664bb7d0d8dc77fa288
+      internalID: 2119308419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saskia Monster Attack2_2
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e34005fa3747a40be98f2560caebf6
+      internalID: 1302497443
       vertices: []
       indices: 
       edges: []
@@ -157,8 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Saskia Monster Attack_0: -175973889
-      Saskia Monster Attack_1: 1942529533
+      Saskia Monster Attack2_2: 1302497443
+      Saskia Monster Attack2_0: -34799965
+      Saskia Monster Attack2_1: 2119308419
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
