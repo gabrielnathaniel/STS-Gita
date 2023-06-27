@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c34573194dd184cbdff359b3ddf4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Chapter 1 - Hall
+  sceneToLoad: Chapter 4 - Tomi Isekai
   sceneFader: {fileID: 414169461}
 --- !u!4 &36386702
 Transform:
