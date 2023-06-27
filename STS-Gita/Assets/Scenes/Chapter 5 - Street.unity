@@ -935,6 +935,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
+  playerMovement: {fileID: 1139737958}
 --- !u!320 &1015335838
 PlayableDirector:
   m_ObjectHideFlags: 0
