@@ -53,6 +53,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -71,12 +72,21 @@ public class PlayerMovement : MonoBehaviour {
 	private float dashingTime = 0.2f;
 	private float dashingCooldown = 1f;
 
+	public bool isInDialogue = false;
+	[SerializeField] private PlayableDirector timeline;
+
 	[SerializeField] private TrailRenderer tr;
 	
 	// Update is called once per frame
 	void Update () {
-		// if (FindObjectOfType<DialogueManager>().isActive == true)
-		// 	return;
+		if (isInDialogue == true)
+			return;
+		
+		if (timeline != null) 
+		{
+			if (timeline.state == PlayState.Playing) 
+				return;
+		}
 
 		if(isDashing)
 		{

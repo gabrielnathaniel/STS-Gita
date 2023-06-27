@@ -784,6 +784,8 @@ MonoBehaviour:
   animator: {fileID: 529204714}
   rb: {fileID: 529204722}
   runSpeed: 40
+  isInDialogue: 0
+  timeline: {fileID: 0}
   tr: {fileID: 0}
 --- !u!114 &529204720
 MonoBehaviour:
@@ -6128,6 +6130,8 @@ MonoBehaviour:
   animator: {fileID: 1313251917}
   rb: {fileID: 0}
   runSpeed: 35
+  isInDialogue: 0
+  timeline: {fileID: 0}
   tr: {fileID: 0}
 --- !u!114 &1313251914
 MonoBehaviour:
@@ -6305,6 +6309,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1313251919}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1313251910}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6412,25 +6420,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 1393762757}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1393762759 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 1393762757}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1393762760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393762759}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 1313251910}
-  FixScale: 0.75
 --- !u!1 &1486242727
 GameObject:
   m_ObjectHideFlags: 0

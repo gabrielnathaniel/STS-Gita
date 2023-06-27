@@ -306,8 +306,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1139737957}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1139737954}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -5612,6 +5620,8 @@ MonoBehaviour:
   animator: {fileID: 1139737955}
   rb: {fileID: 0}
   runSpeed: 35
+  isInDialogue: 0
+  timeline: {fileID: 0}
   tr: {fileID: 0}
 --- !u!114 &1139737959
 MonoBehaviour:
@@ -5794,6 +5804,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
+  playerMovement: {fileID: 1139737958}
 --- !u!320 &1445873399
 PlayableDirector:
   m_ObjectHideFlags: 0

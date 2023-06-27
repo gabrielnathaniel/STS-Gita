@@ -397,6 +397,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_Text
       value: Yunan bangsat
@@ -504,6 +508,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 407118031}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &556483069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556483067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 1139737954}
+  FixScale: 1
 --- !u!1 &706799024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5680,6 +5698,8 @@ MonoBehaviour:
   animator: {fileID: 1139737955}
   rb: {fileID: 0}
   runSpeed: 35
+  isInDialogue: 0
+  timeline: {fileID: 1409549156}
   tr: {fileID: 0}
 --- !u!114 &1139737959
 MonoBehaviour:
@@ -5908,6 +5928,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: 5730260f398e2487faacb2d0aefff408, type: 3}
+  playerMovement: {fileID: 1139737958}
 --- !u!114 &1409549159
 MonoBehaviour:
   m_ObjectHideFlags: 0
