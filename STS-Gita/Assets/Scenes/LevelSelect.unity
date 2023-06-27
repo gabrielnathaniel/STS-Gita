@@ -183,6 +183,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5346902486446347050, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346902486446347050, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
       propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
@@ -997,7 +1001,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &1236899839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,7 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236841371ac8f4e9eae5e57ce2402c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneFader: {fileID: 0}
+  sceneFader: {fileID: 778596188}
   buttons:
   - {fileID: 1116124867}
   - {fileID: 1092838683}

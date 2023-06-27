@@ -371,7 +371,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.56}
+    oldSize: {x: 1.96, y: 2.68}
     newSize: {x: 2.4, y: 2.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5851,6 +5851,8 @@ PlayableDirector:
     value: {fileID: 97580259}
   - key: {fileID: 3936392826962701118, guid: c0ca3d836c035f44d900e9391be2aa44, type: 2}
     value: {fileID: 384964830}
+  - key: {fileID: 4529251915676593819, guid: c0ca3d836c035f44d900e9391be2aa44, type: 2}
+    value: {fileID: 36386700}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &972470399

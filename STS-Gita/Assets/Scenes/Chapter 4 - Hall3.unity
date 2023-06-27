@@ -228,7 +228,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &97580256
 GameObject:
@@ -535,7 +535,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &407118031
 PrefabInstance:
@@ -641,11 +641,6 @@ PrefabInstance:
 --- !u!4 &407118032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 407118031}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &407118033 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 407118031}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &414169461 stripped
@@ -5569,7 +5564,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &894430209
 GameObject:
@@ -5807,143 +5802,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &972470397
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 972470399}
-  - component: {fileID: 972470398}
-  - component: {fileID: 972470400}
-  - component: {fileID: 972470401}
-  m_Layer: 0
-  m_Name: GitaPowerOnTomi
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &972470398
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972470397}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: c0ca3d836c035f44d900e9391be2aa44, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 2979347232102806504, guid: c0ca3d836c035f44d900e9391be2aa44, type: 2}
-    value: {fileID: 1139737955}
-  - key: {fileID: 5594384145359099020, guid: c0ca3d836c035f44d900e9391be2aa44, type: 2}
-    value: {fileID: 912088512}
-  - key: {fileID: 7759673165290769198, guid: c0ca3d836c035f44d900e9391be2aa44, type: 2}
-    value: {fileID: 889448611}
-  - key: {fileID: -2161345278862434099, guid: c0ca3d836c035f44d900e9391be2aa44, type: 2}
-    value: {fileID: 97580259}
-  - key: {fileID: 3936392826962701118, guid: c0ca3d836c035f44d900e9391be2aa44, type: 2}
-    value: {fileID: 384964830}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &972470399
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972470397}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6405206, y: -0.8535722, z: -0.025826925}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &972470400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972470397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - message: Gita!
-    actorId: 0
-  - message: Ada apa Tom?
-    actorId: 1
-  - message: Aku ga salah liat kan kalau kamu seperti punya kekuatan?
-    actorId: 0
-  - message: 'Kekuatan apa maksud kamu? '
-    actorId: 1
-  - message: Tadi sebelum aku pingsan, aku melihat kamu seperti masuk kedalam portal.
-    actorId: 0
-  - message: Lalu semua jadi putih dan aku hilang kesadaran.
-    actorId: 0
-  - message: 'Kamu ga merahasiakan sesuatu dari aku kan? '
-    actorId: 0
-  - message: 'Sebenarnya.. Aku memang punya kekuatan unik. '
-    actorId: 1
-  - message: 'Kekuatan unik? Berarti selama ini kamu merahasiakan sesuatu dari aku? '
-    actorId: 0
-  - message: 'Aku ga bermaksud merahasiakannya dari kamu kok Tom. Tapi aku takut
-      kalau kamu menganggap aku aneh. '
-    actorId: 1
-  - message: 'Jadi kekuatanku ini bisa masuk ke dalam lubuk hati seseorang dan merubah
-      suasananya. '
-    actorId: 1
-  - message: HAH?! Gimana sih maksud kamu?!
-    actorId: 0
-  actors:
-  - box: {fileID: 407118033}
-  - box: {fileID: 1427606285}
-  timeline: {fileID: 972470398}
-  isActive: 0
-  textSpeed: 0.05
-  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
---- !u!114 &972470401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972470397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: c6796afd9c8724b4ea34a88e0b575fe3, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 972470400}
-          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
-          m_MethodName: StartDialogue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1139737954
 GameObject:
   m_ObjectHideFlags: 0
@@ -6112,7 +5970,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.32, y: 2.64}
+    oldSize: {x: 2.12, y: 2.56}
     newSize: {x: 10.009776, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6306,11 +6164,6 @@ PrefabInstance:
 --- !u!4 &1427606284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 1427606283}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1427606285 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 1427606283}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1594078836
@@ -6534,7 +6387,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2074910814 stripped
 GameObject:

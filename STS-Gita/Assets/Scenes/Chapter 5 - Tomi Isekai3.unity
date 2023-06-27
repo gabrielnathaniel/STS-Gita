@@ -272,7 +272,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &135854058
 Animator:
@@ -752,7 +752,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &529204713
 GameObject:
@@ -962,7 +962,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.6065404, y: 2.8}
+    oldSize: {x: 2.4, y: 2.96}
     newSize: {x: 2.4, y: 2.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -992,6 +992,163 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!1 &562865731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562865733}
+  - component: {fileID: 562865732}
+  - component: {fileID: 562865734}
+  - component: {fileID: 562865735}
+  m_Layer: 0
+  m_Name: TomiIsekaiConversation2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &562865732
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562865731}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 085a754915f828040b904c9069d2c5a1, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 4430060911721263197, guid: 085a754915f828040b904c9069d2c5a1, type: 2}
+    value: {fileID: 529204714}
+  - key: {fileID: -5928482249269269182, guid: 085a754915f828040b904c9069d2c5a1, type: 2}
+    value: {fileID: 1667578319}
+  - key: {fileID: -5532566938156451079, guid: 085a754915f828040b904c9069d2c5a1, type: 2}
+    value: {fileID: 810711675}
+  - key: {fileID: -8332808877075240979, guid: 085a754915f828040b904c9069d2c5a1, type: 2}
+    value: {fileID: 135854058}
+  - key: {fileID: -7747015428744035055, guid: 085a754915f828040b904c9069d2c5a1, type: 2}
+    value: {fileID: 523991140}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &562865733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562865731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562865734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562865731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - message: '[?]'
+    actorId: 0
+  - message: Loh! Kenapa ada kucing di sini?
+    actorId: 0
+  - message: 'Ini kali pertama aku melihat kamu, tapi kenapa aku merasa seperti mengenalmu? '
+    actorId: 0
+  - message: Justru aku akan marah kalau kamu tidak mengenalku.
+    actorId: 1
+  - message: 'Hah? Kamu Biru? '
+    actorId: 0
+  - message: 'Iya! Ini aku! '
+    actorId: 1
+  - message: Kenapa kamu bisa ada di sini?
+    actorId: 0
+  - message: Tomi.. Aku belum bisa pergi dengan tenang kalau kamu sendiri belum bisa
+      mengikhlaskan kepergianku.
+    actorId: 1
+  - message: Itu bukan hal yang mudah, terlebih ini atas keteledoranku.
+    actorId: 0
+  - message: Tom.. Kamu denger sendiri kan apa yang Biru bilang?
+    actorId: 2
+  - message: Maaf kalau terlalu ikut campur, tetapi di kondisi seperti ini memang
+      ada baiknya kamu harus mengikhlaskan kepergiannya.
+    actorId: 2
+  - message: Bukan hal yang baik jika kamu terlalu larut dalam kesedihan.
+    actorId: 2
+  - message: Iya... kini aku mengerti langkah apa yang harus aku ambil.
+    actorId: 0
+  - message: Biru... aku minta maaf atas kesalahanku di hari itu.
+    actorId: 0
+  - message: Ini bukan sepenuhnya kesalahanmu, Tomi.
+    actorId: 1
+  - message: Jangan terlalu menyalahkan dirimu sendiri, cobalah untuk bermain dengan
+      kucing lain, sayangi mereka sebagaimana kamu menyayangiku, Tom..
+    actorId: 1
+  - message: Jangan jauhi mereka karena trauma yang kamu miliki itu.
+    actorId: 1
+  - message: Aku akan lebih senang jika kamu mau bersikap baik dan bermain bersama
+      mereka.
+    actorId: 1
+  - message: Dan untuk yang terakhir, terima kasih pada akhirnya kamu mau mengikhlaskan
+      kepergianku ini. Aku selalu berharap hal baik menyertaimu, Tom.
+    actorId: 1
+  - message: Terima kasih banyak untuk segalanya, sahabatku.
+    actorId: 1
+  actors:
+  - box: {fileID: 113105720}
+  - box: {fileID: 187988989}
+  - box: {fileID: 2001559792}
+  timeline: {fileID: 562865732}
+  isActive: 0
+  textSpeed: 0.05
+  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
+--- !u!114 &562865735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562865731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c6796afd9c8724b4ea34a88e0b575fe3, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 562865734}
+          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
+          m_MethodName: StartDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &706799024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5810,6 +5967,111 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &810711674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810711677}
+  - component: {fileID: 810711676}
+  - component: {fileID: 810711675}
+  m_Layer: 0
+  m_Name: Biru Siluet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &810711675
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810711674}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6361128ff12e6f47917150d363e51d1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &810711676
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810711674}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1194566835
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -1849645888, guid: 2c30994d995f38043b65bcbb9b297f62, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.48, y: 1.76}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &810711677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810711674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3203402, y: -2.2749496, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912088507
 GameObject:
   m_ObjectHideFlags: 0
@@ -5914,214 +6176,6 @@ MonoBehaviour:
   rightLimit: 10.5
   topLimit: 0.02
   bottomLimit: 0.01
---- !u!1 &958661639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 958661641}
-  - component: {fileID: 958661640}
-  - component: {fileID: 958661642}
-  - component: {fileID: 958661643}
-  - component: {fileID: 958661644}
-  m_Layer: 0
-  m_Name: TomiIsekaiConversation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &958661640
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958661639}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 5f1d875e964470c4d9e90fdf568a20fc, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 4430060911721263197, guid: 5f1d875e964470c4d9e90fdf568a20fc, type: 2}
-    value: {fileID: 529204714}
-  - key: {fileID: -5928482249269269182, guid: 5f1d875e964470c4d9e90fdf568a20fc, type: 2}
-    value: {fileID: 1667578319}
-  - key: {fileID: -8332808877075240979, guid: 5f1d875e964470c4d9e90fdf568a20fc, type: 2}
-    value: {fileID: 135854058}
-  - key: {fileID: -5532566938156451079, guid: 5f1d875e964470c4d9e90fdf568a20fc, type: 2}
-    value: {fileID: 1950323109}
-  - key: {fileID: -7747015428744035055, guid: 5f1d875e964470c4d9e90fdf568a20fc, type: 2}
-    value: {fileID: 523991140}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &958661641
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958661639}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.83403647, y: -0.20873985, z: -99.57023}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &958661642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958661639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - message: Tomi... mungkin ini terdengar terlambat, aku turut berduka atas masa
-      lalu yang kamu alami ini.
-    actorId: 0
-  - message: Lagipula, siapa juga yang mengizinkan kamu untuk tau urusan pribadiku
-      ini?
-    actorId: 1
-  - message: Aku sebenarnya tidak pernah mau untuk terbuka mengenai hal ini, termasuk
-      ke orang terdekat seperti kamu.
-    actorId: 1
-  - message: "Karena sampai saat ini pun bayang\x02bayang Biru selalu teringat dalam
-      pikiranku, makanya aku selalu menghindari segala sesuatu yang berhubungan dengan
-      kucing."
-    actorId: 1
-  - message: 'Aku melakukan ini demi kebaikanmu, Tom... '
-    actorId: 0
-  - message: Ini tuh bukan hal yang mudah, dan aku butuh waktu yang sangat lama untuk
-      menerima kepergiannya.
-    actorId: 1
-  - message: Kamu pasti tau kan rasanya kehilangan sesuatu yang kamu sayang?
-    actorId: 1
-  - message: Emang kamu yakin kalau membantu orang menyelesaikan masalah mereka itu
-      jadi "distraksi" terbaik atas masalah kamu?
-    actorId: 0
-  - message: LEBIH BAIK KAMU URUS SAJA URSANMU SENDIRI!
-    actorId: 1
-  - message: KELUAR!!!!!
-    actorId: 1
-  - message: Tunggu!!
-    actorId: 2
-  actors:
-  - box: {fileID: 2001559792}
-  - box: {fileID: 113105720}
-  - box: {fileID: 2022095593}
-  timeline: {fileID: 958661640}
-  isActive: 0
-  textSpeed: 0.05
-  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
---- !u!114 &958661643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958661639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: c6796afd9c8724b4ea34a88e0b575fe3, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 958661642}
-          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
-          m_MethodName: StartDialogue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &958661644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958661639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07f3152313f84aea9dec6f00dba2c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - message: '[?]'
-    actorId: 0
-  - message: Loh! Kenapa ada kucing di sini?
-    actorId: 0
-  - message: 'Ini kali pertama aku melihat kamu, tapi kenapa aku merasa seperti mengenalmu? '
-    actorId: 0
-  - message: Justru aku akan marah kalau kamu tidak mengenalku.
-    actorId: 1
-  - message: 'Hah? Kamu biru? '
-    actorId: 0
-  - message: 'Iya! Ini aku! '
-    actorId: 1
-  - message: Kenapa kamu bisa ada di sini?
-    actorId: 0
-  - message: Tomi.. Aku belum bisa pergi dengan tenang kalau kamu sendiri belum bisa
-      mengikhlaskan kepergianku.
-    actorId: 1
-  - message: Itu bukan hal yang mudah, terlebih ini atas keteledoranku.
-    actorId: 0
-  - message: Tom.. Kamu denger sendiri kan apa yang Biru bilang?
-    actorId: 2
-  - message: Maaf kalau terlalu ikut campur, tetapi di kondisi seperti ini memang
-      ada baiknya kamu harus mengikhlaskan kepergiannya.
-    actorId: 2
-  - message: Bukan hal yang baik jika kamu terlalu larut dalam kesedihan.
-    actorId: 2
-  - message: Iya... kini aku mengerti langkah apa yang harus aku ambil.
-    actorId: 0
-  - message: Biru... aku minta maaf atas kesalahanku di hari itu.
-    actorId: 0
-  - message: Ini bukan sepenuhnya kesalahanmu, Tomi.
-    actorId: 1
-  - message: Jangan terlalu menyalahkan dirimu sendiri, cobalah untuk bermain dengan
-      kucing lain, sayangi mereka sebagaimana kamu menyayangiku, Tom..
-    actorId: 1
-  - message: Jangan jauhi mereka karena trauma yang kamu miliki itu.
-    actorId: 1
-  - message: Aku akan lebih senang jika kamu mau bersikap baik dan bermain bersama
-      mereka.
-    actorId: 1
-  - message: Dan untuk yang terakhir, terima kasih pada akhirnya kamu mau mengikhlaskan
-      kepergianku ini. Aku selalu berharap hal baik menyertaimu, Tom.
-    actorId: 1
-  - message: Terima kasih banyak untuk segalanya, sahabatku.
-    actorId: 1
-  actors:
-  - box: {fileID: 113105720}
-  - box: {fileID: 187988989}
-  - box: {fileID: 2001559792}
-  timeline: {fileID: 958661640}
-  isActive: 0
-  textSpeed: 0.05
-  sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
 --- !u!1 &1194485305
 GameObject:
   m_ObjectHideFlags: 0
@@ -6957,254 +7011,11 @@ Transform:
   m_Father: {fileID: 529204716}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1950323108
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1950323111}
-  - component: {fileID: 1950323110}
-  - component: {fileID: 1950323109}
-  m_Layer: 0
-  m_Name: Biru Siluet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &1950323109
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950323108}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7b594268fe1c07b42b80695fd0e30f53, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &1950323110
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950323108}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1194566835
-  m_SortingLayer: 1
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -1849645888, guid: 2c30994d995f38043b65bcbb9b297f62, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.48, y: 1.76}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1950323111
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950323108}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3203402, y: -2.2749496, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2001559792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 427790036}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2022095592
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2107990729}
-    m_Modifications:
-    - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: isActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: writingSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 99.57023
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_Name
-      value: BiruFarDialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625648482664, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6237802617663638098, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: dialogues.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6237802617663638098, guid: acfd51287ace6044bab3760953599449, type: 3}
-      propertyPath: dialogues.Array.data[0]
-      value: Wah, kelasnya masih sepi.
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: acfd51287ace6044bab3760953599449, type: 3}
---- !u!1 &2022095593 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 2022095592}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2022095594 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 2022095592}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2022095595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 2022095592}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2022095596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022095595}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 1313251910}
-  FixScale: 0.75
 --- !u!1 &2074910814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5346902486446347060, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
@@ -7235,38 +7046,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &2107990728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2107990729}
-  m_Layer: 0
-  m_Name: Biru Far
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2107990729
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107990728}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.83403647, y: -0.20873985, z: -99.57023}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2022095594}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138435794
 GameObject:
   m_ObjectHideFlags: 0

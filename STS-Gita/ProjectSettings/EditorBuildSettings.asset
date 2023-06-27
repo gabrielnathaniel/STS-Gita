@@ -84,6 +84,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 4 - Hall2.unity
     guid: 785e42a0abae6f34db27f99ba5f6afb9
   - enabled: 1
+    path: Assets/Scenes/Chapter 4 - Tomi Isekai.unity
+    guid: 2ad153843f33a774bb7e5933ca30b50d
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4 - Hall3.unity
+    guid: 42f2046ff7b906141aa726f61eb474b3
+  - enabled: 1
     path: Assets/Scenes/Chapter 5 - Classroom.unity
     guid: 232219cec07d76744bd40c32c72c3436
   - enabled: 1
@@ -91,7 +97,10 @@ EditorBuildSettings:
     guid: 7b4f5f059039ae148adc716fb8cd527e
   - enabled: 1
     path: Assets/Scenes/Chapter 5 - Tomi Isekai2.unity
-    guid: 4c5f637192d0a7a4d8f25d88c551aed5
+    guid: 7b6e8c5d7a1c49a4093b6156ee7cff2b
+  - enabled: 1
+    path: Assets/Scenes/Chapter 5 - Tomi Isekai3.unity
+    guid: 04ea67f2e811f774b8044e8b370fac50
   - enabled: 1
     path: Assets/Scenes/Chapter 5 - Street.unity
     guid: 3ce093dbb5dee1e46a5e5e9e602ce6ac
