@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 1 - Classroom.unity
     guid: 2b1dc0a1397c8ef4ea816a8ecb742148
   - enabled: 1
+    path: Assets/Scenes/Chapter 2 - Opening.unity
+    guid: 10655a6a9013a3044a8452746a1a7726
+  - enabled: 1
     path: Assets/Scenes/Chapter 2 - Canteen.unity
     guid: 15beff68434b80f4babc3e3d04ee0fe0
   - enabled: 1
@@ -51,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 2 - Candy Land3.unity
     guid: 3bc85be1f52b3c348958bd1aed895df9
   - enabled: 1
+    path: Assets/Scenes/Chapter 3 - Opening.unity
+    guid: 1b9d54e55eff20248a2026a28bc57c74
+  - enabled: 1
     path: Assets/Scenes/Chapter 3 - Hall.unity
     guid: e307c1b2a69bbbd4eb198bdc30605752
   - enabled: 1
@@ -66,11 +72,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 3 - Theatre3.unity
     guid: c55a028277f5f36459eb0010f43d7192
   - enabled: 1
+    path: Assets/Scenes/Chapter 4 - Opening.unity
+    guid: 2bcc652730abf3140a5769340d9164dd
+  - enabled: 1
     path: Assets/Scenes/Chapter 4 - Classroom.unity
     guid: f26b5e83ca7d18c49891fda8128bdad2
   - enabled: 1
     path: Assets/Scenes/Chapter 4 - Classroom2.unity
     guid: 3e564fd38cd02484daef1f4a73821547
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4 - Broken Home.unity
+    guid: b8da95f330ae47441a4cbd3bd56182a4
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4 - Broken Home2.unity
+    guid: 4fd513da7f754f74891db017a3193819
+  - enabled: 1
+    path: Assets/Scenes/Chapter 4 - Broken Home3.unity
+    guid: 2e8dafd9512b69e4a8661035e21e5e34
   - enabled: 1
     path: Assets/Scenes/Chapter 4 - Hall.unity
     guid: 6e2829354c57e824daf556bc837f806d
@@ -89,6 +107,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter 4 - Hall3.unity
     guid: 42f2046ff7b906141aa726f61eb474b3
+  - enabled: 1
+    path: Assets/Scenes/Chapter 5 - Opening.unity
+    guid: 6787f7efaded0ac43a5e8bef98876cdb
   - enabled: 1
     path: Assets/Scenes/Chapter 5 - Classroom.unity
     guid: 232219cec07d76744bd40c32c72c3436

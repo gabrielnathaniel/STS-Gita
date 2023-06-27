@@ -27,7 +27,7 @@ public class DoorTrigger : MonoBehaviour
 
     private void Update()
     {
-        if(playerDoorIndicator.activeInHierarchy && Input.GetKeyDown(KeyCode.UpArrow))
+        if(playerDoorIndicator.activeInHierarchy && Input.GetKeyDown(KeyCode.F))
         {
             sceneFader.FadeTo(sceneToLoad);
         }
