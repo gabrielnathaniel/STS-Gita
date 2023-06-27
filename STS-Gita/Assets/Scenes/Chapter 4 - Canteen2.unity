@@ -6044,6 +6044,8 @@ MonoBehaviour:
   animator: {fileID: 1139737955}
   rb: {fileID: 0}
   runSpeed: 35
+  isInDialogue: 0
+  timeline: {fileID: 0}
   tr: {fileID: 0}
 --- !u!114 &1139737959
 MonoBehaviour:
@@ -6205,10 +6207,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579809275}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1579809274}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1139737958}
     - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_Text
       value: Yunan bangsat
@@ -6481,10 +6491,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 81329463}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 81329461}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1139737958}
     - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_Text
       value: Yunan bangsat
@@ -6953,10 +6971,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1161171666}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1161171664}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1139737958}
     - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_Text
       value: Yunan bangsat

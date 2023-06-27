@@ -31,6 +31,8 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] private AudioClip sound;
 
+    [SerializeField] private PlayerMovement playerMovement;
+
     public void OpenDialogue(Message[] messages, Actor[] actors) 
     {
         indicator.SetActive(false);
@@ -38,6 +40,7 @@ public class DialogueManager : MonoBehaviour
         currentActors = actors;
         index = 0;
         isActive = true;
+        playerMovement.isInDialogue = true;
         actors[currentMessages[index].actorId].box.SetActive(true);
 
         Debug.Log("Conversation Started" + currentMessages.Length);
@@ -51,6 +54,7 @@ public class DialogueManager : MonoBehaviour
             actor.box.SetActive(false);
         }
         isActive = false;
+        playerMovement.isInDialogue = false;
         SoundManager.instance.StopSound();
 
         if(isMinigame == true)
