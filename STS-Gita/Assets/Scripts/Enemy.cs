@@ -12,6 +12,10 @@ public class Enemy : MonoBehaviour
 
     public int maxHealth = 100;
     private int currentHealth;
+
+    public bool isBoss = false;
+    public SceneFader sceneFader;
+    public string sceneToLoad = "Chapter 6 - Candy Land7";
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +65,11 @@ public class Enemy : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
         StartCoroutine(Disappear());
+
+        if(isBoss)
+        {
+            sceneFader.FadeTo(sceneToLoad);
+        }
     }
 
     IEnumerator Disappear()

@@ -516,7 +516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7949436600130033376, guid: 81efb91e53c211440bfec6dae0cafab0, type: 3}
       propertyPath: m_Text
-      value: CAUSE AND EFFECT
+      value: TWO SIDE OF COIN
       objectReference: {fileID: 0}
     - target: {fileID: 7949436600130033376, guid: 81efb91e53c211440bfec6dae0cafab0, type: 3}
       propertyPath: m_Color.a
@@ -528,7 +528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7949436600130033378, guid: 81efb91e53c211440bfec6dae0cafab0, type: 3}
       propertyPath: m_Name
-      value: Cause and Effect
+      value: Two Side of Coin
       objectReference: {fileID: 0}
     - target: {fileID: 7949436600514090797, guid: 81efb91e53c211440bfec6dae0cafab0, type: 3}
       propertyPath: m_Color.a
