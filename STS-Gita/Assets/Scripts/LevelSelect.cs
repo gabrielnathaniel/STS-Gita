@@ -16,4 +16,24 @@ public class LevelSelect : MonoBehaviour
     {
         sceneFader.FadeTo("Chapter 1 - Opening");
     }
+
+    public void OpenChapter2()
+    {
+        sceneFader.FadeTo("Chapter 2 - Opening");
+    }
+
+    public void OpenChapter3()
+    {
+        sceneFader.FadeTo("Chapter 3 - Opening");
+    }
+
+    public void OpenChapter4()
+    {
+        sceneFader.FadeTo("Chapter 4 - Opening");
+    }
+
+    public void OpenChapter5()
+    {
+        sceneFader.FadeTo("Chapter 5 - Opening");
+    }
 }
