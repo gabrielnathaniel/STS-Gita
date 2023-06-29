@@ -13037,7 +13037,7 @@ MonoBehaviour:
   audioSource: {fileID: 1323404136}
   dialogueBox: {fileID: 738545195}
   sceneFader: {fileID: 795014474}
-  sceneToLoad: Chapter 1 - Classroom2
+  sceneToLoad: Chapter 2 - Opening
   playableDirector: {fileID: 1064094316}
 --- !u!82 &1323404136
 AudioSource:

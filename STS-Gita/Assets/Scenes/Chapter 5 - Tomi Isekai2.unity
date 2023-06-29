@@ -5884,6 +5884,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
+  playerMovement: {fileID: 529204719}
 --- !u!114 &958661643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5980,6 +5981,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
+  playerMovement: {fileID: 0}
 --- !u!1 &1194485305
 GameObject:
   m_ObjectHideFlags: 0
