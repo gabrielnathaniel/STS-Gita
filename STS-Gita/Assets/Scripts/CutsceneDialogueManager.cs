@@ -27,7 +27,10 @@ public class CutsceneDialogueManager : MonoBehaviour
     {
         Debug.Log("Should start cutscene Dialog");
         isActive = true;
-        playerMovement.isInDialogue = true;
+        if (playerMovement != null)
+        {
+            playerMovement.isInDialogue = true;
+        }
         timeline.Pause();
         DisplayMessage();
     }
@@ -39,7 +42,10 @@ public class CutsceneDialogueManager : MonoBehaviour
             actor.box.SetActive(false);
         }
         isActive = false;
-        playerMovement.isInDialogue = false;
+        if (playerMovement != null)
+        {
+            playerMovement.isInDialogue = false;
+        }
         timeline.Resume();
         SoundManager.instance.StopSound();
     }
