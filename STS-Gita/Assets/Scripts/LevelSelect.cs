@@ -29,7 +29,7 @@ public class LevelSelect : MonoBehaviour
 
     public void OpenChapter4()
     {
-        sceneFader.FadeTo("Chapter 4 - Opening");
+        sceneFader.FadeTo("Chapter 4 - Hall");
     }
 
     public void OpenChapter5()
