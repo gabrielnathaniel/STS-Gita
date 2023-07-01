@@ -317,8 +317,6 @@ GameObject:
   - component: {fileID: 285612943}
   - component: {fileID: 285612942}
   - component: {fileID: 285612941}
-  - component: {fileID: 285612940}
-  - component: {fileID: 285612939}
   m_Layer: 10
   m_Name: Waffle (1)
   m_TagString: Untagged
@@ -326,40 +324,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &285612939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285612938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 30
-  attackOffset: {x: -1.7, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &285612940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285612938}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 285612943}
-  maxHealth: 200
 --- !u!61 &285612941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -809,8 +773,6 @@ GameObject:
   - component: {fileID: 813941758}
   - component: {fileID: 813941757}
   - component: {fileID: 813941756}
-  - component: {fileID: 813941755}
-  - component: {fileID: 813941754}
   m_Layer: 10
   m_Name: Waffle (2)
   m_TagString: Untagged
@@ -818,40 +780,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &813941754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813941753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 30
-  attackOffset: {x: -1.7, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &813941755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813941753}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 813941758}
-  maxHealth: 200
 --- !u!61 &813941756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -997,7 +925,6 @@ GameObject:
   - component: {fileID: 894430211}
   - component: {fileID: 894430210}
   - component: {fileID: 894430212}
-  - component: {fileID: 894430213}
   m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
@@ -1098,19 +1025,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 21.341436, y: 0.8946214}
   m_EdgeRadius: 0
---- !u!114 &894430213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894430209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba1c6cf2b3754194d9c177e0bf9e0adb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isekaiDoorTrigger: {fileID: 0}
 --- !u!1 &912088507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,8 +1231,6 @@ GameObject:
   - component: {fileID: 1197588530}
   - component: {fileID: 1197588529}
   - component: {fileID: 1197588528}
-  - component: {fileID: 1197588527}
-  - component: {fileID: 1197588526}
   m_Layer: 10
   m_Name: Waffle (4)
   m_TagString: Untagged
@@ -1326,40 +1238,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1197588526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197588525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 30
-  attackOffset: {x: -1.7, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &1197588527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197588525}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1197588530}
-  maxHealth: 200
 --- !u!61 &1197588528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1641,8 +1519,6 @@ GameObject:
   - component: {fileID: 1736241045}
   - component: {fileID: 1736241051}
   - component: {fileID: 1736241050}
-  - component: {fileID: 1736241049}
-  - component: {fileID: 1736241048}
   m_Layer: 10
   m_Name: Waffle
   m_TagString: Untagged
@@ -1737,40 +1613,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1736241048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736241044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 30
-  attackOffset: {x: -1.7, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &1736241049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736241044}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1736241045}
-  maxHealth: 200
 --- !u!61 &1736241050
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1912,7 +1754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1889745756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,8 +1828,6 @@ GameObject:
   - component: {fileID: 2085780523}
   - component: {fileID: 2085780522}
   - component: {fileID: 2085780521}
-  - component: {fileID: 2085780520}
-  - component: {fileID: 2085780519}
   m_Layer: 10
   m_Name: Waffle (3)
   m_TagString: Untagged
@@ -1995,40 +1835,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2085780519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085780518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 30
-  attackOffset: {x: -1.7, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &2085780520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085780518}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 2085780523}
-  maxHealth: 200
 --- !u!61 &2085780521
 BoxCollider2D:
   m_ObjectHideFlags: 0

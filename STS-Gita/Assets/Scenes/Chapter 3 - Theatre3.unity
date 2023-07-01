@@ -383,6 +383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 2545275165403492141, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492142, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -1346,6 +1350,7 @@ GameObject:
   - component: {fileID: 894430211}
   - component: {fileID: 894430210}
   - component: {fileID: 894430212}
+  - component: {fileID: 894430213}
   m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
@@ -1446,6 +1451,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 21.341436, y: 0.8946214}
   m_EdgeRadius: 0
+--- !u!114 &894430213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894430209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1c6cf2b3754194d9c177e0bf9e0adb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isekaiDoorTrigger: {fileID: 1687512623}
 --- !u!1 &912088507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,6 +2175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
+--- !u!1 &1687512623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1881837450105951985, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
+  m_PrefabInstance: {fileID: 1687512622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1692797316
 GameObject:
   m_ObjectHideFlags: 0

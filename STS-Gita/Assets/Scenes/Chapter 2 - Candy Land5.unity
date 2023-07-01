@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 275295661}
   - component: {fileID: 275295660}
   - component: {fileID: 275295659}
+  - component: {fileID: 275295662}
   m_Layer: 0
   m_Name: CandyLandBossOpening
   m_TagString: Untagged
@@ -278,6 +279,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &275295662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275295658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c6796afd9c8724b4ea34a88e0b575fe3, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 275295659}
+          m_TargetAssemblyTypeName: CutsceneDialogueManager, Assembly-CSharp
+          m_MethodName: StartDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &297429320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,8 +383,6 @@ GameObject:
   - component: {fileID: 324023996}
   - component: {fileID: 324024001}
   - component: {fileID: 324024000}
-  - component: {fileID: 324023999}
-  - component: {fileID: 324024002}
   m_Layer: 10
   m_Name: Krisna_Monster
   m_TagString: Enemy
@@ -449,22 +478,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &324023999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324023995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 324023996}
-  maxHealth: 100
 --- !u!61 &324024000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -512,24 +525,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &324024002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324023995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: 0, y: -0.84, z: 0}
-  attackRange: 3
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!1 &529204713
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,7 +735,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.96}
+    oldSize: {x: 3.6065404, y: 2.8}
     newSize: {x: 2.4, y: 2.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1314,7 +1309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1564730743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1357,8 +1352,6 @@ GameObject:
   - component: {fileID: 1736241045}
   - component: {fileID: 1736241051}
   - component: {fileID: 1736241050}
-  - component: {fileID: 1736241049}
-  - component: {fileID: 1736241048}
   m_Layer: 10
   m_Name: Waffle
   m_TagString: Untagged
@@ -1453,40 +1446,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1736241048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736241044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 30
-  attackOffset: {x: -1.7, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &1736241049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736241044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1736241045}
-  maxHealth: 200
 --- !u!61 &1736241050
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1547,8 +1506,6 @@ GameObject:
   - component: {fileID: 1885088563}
   - component: {fileID: 1885088567}
   - component: {fileID: 1885088566}
-  - component: {fileID: 1885088568}
-  - component: {fileID: 1885088569}
   m_Layer: 10
   m_Name: Pudding
   m_TagString: Untagged
@@ -1690,40 +1647,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1885088568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885088562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1885088563}
-  maxHealth: 100
---- !u!114 &1885088569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885088562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: -1.23, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!1 &1918560547
 GameObject:
   m_ObjectHideFlags: 0

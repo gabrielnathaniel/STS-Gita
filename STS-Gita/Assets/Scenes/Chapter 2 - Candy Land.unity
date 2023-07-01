@@ -208,8 +208,6 @@ GameObject:
   - component: {fileID: 142070506}
   - component: {fileID: 142070505}
   - component: {fileID: 142070504}
-  - component: {fileID: 142070503}
-  - component: {fileID: 142070502}
   m_Layer: 10
   m_Name: Pudding (4)
   m_TagString: Enemy
@@ -217,40 +215,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &142070502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142070501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: -1.23, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &142070503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142070501}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 142070506}
-  maxHealth: 100
 --- !u!61 &142070504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -540,7 +504,6 @@ GameObject:
   - component: {fileID: 529204720}
   - component: {fileID: 529204719}
   - component: {fileID: 529204718}
-  - component: {fileID: 529204717}
   m_Layer: 8
   m_Name: Gita_Isekai
   m_TagString: Player
@@ -639,23 +602,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &529204717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529204713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e744ebc444560f74aae0e5f393dcaa57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 529204714}
-  maxHealth: 100
-  currentHealth: 0
-  deathEffect: {fileID: 0}
-  healthBar: {fileID: 0}
 --- !u!114 &529204718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,7 +727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &540879162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,8 +770,6 @@ GameObject:
   - component: {fileID: 627921095}
   - component: {fileID: 627921094}
   - component: {fileID: 627921093}
-  - component: {fileID: 627921092}
-  - component: {fileID: 627921091}
   m_Layer: 10
   m_Name: Pudding (1)
   m_TagString: Enemy
@@ -833,40 +777,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &627921091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627921090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: -1.23, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &627921092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627921090}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 627921095}
-  maxHealth: 100
 --- !u!61 &627921093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1014,8 +924,6 @@ GameObject:
   - component: {fileID: 852024955}
   - component: {fileID: 852024954}
   - component: {fileID: 852024953}
-  - component: {fileID: 852024952}
-  - component: {fileID: 852024951}
   m_Layer: 10
   m_Name: Pudding (2)
   m_TagString: Enemy
@@ -1023,40 +931,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &852024951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852024950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: -1.23, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &852024952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852024950}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 852024955}
-  maxHealth: 100
 --- !u!61 &852024953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1454,8 +1328,6 @@ GameObject:
   - component: {fileID: 1179811308}
   - component: {fileID: 1179811307}
   - component: {fileID: 1179811306}
-  - component: {fileID: 1179811305}
-  - component: {fileID: 1179811304}
   m_Layer: 10
   m_Name: Pudding (3)
   m_TagString: Enemy
@@ -1463,40 +1335,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1179811304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179811303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: -1.23, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &1179811305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179811303}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1179811308}
-  maxHealth: 100
 --- !u!61 &1179811306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1957,8 +1795,6 @@ GameObject:
   - component: {fileID: 1885088563}
   - component: {fileID: 1885088567}
   - component: {fileID: 1885088566}
-  - component: {fileID: 1885088568}
-  - component: {fileID: 1885088569}
   m_Layer: 10
   m_Name: Pudding
   m_TagString: Enemy
@@ -2100,40 +1936,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1885088568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885088562}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1885088563}
-  maxHealth: 100
---- !u!114 &1885088569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885088562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: -1.23, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!1 &1918560547
 GameObject:
   m_ObjectHideFlags: 0

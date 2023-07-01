@@ -184,6 +184,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
+--- !u!114 &14953455 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5346902485403562775, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
+  m_PrefabInstance: {fileID: 14953454}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37d51ab33ce8c814aa66a78d9c30d341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &280777435
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +281,10 @@ PrefabInstance:
     - target: {fileID: 2545275165403492141, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_Name
       value: BackgroundMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545275165403492141, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492142, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_audioClip
@@ -1359,7 +1374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1c6cf2b3754194d9c177e0bf9e0adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isekaiDoorTrigger: {fileID: 0}
+  isekaiDoorTrigger: {fileID: 1709293435}
 --- !u!1 &899876832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,7 +1966,7 @@ PrefabInstance:
     - target: {fileID: 1881837450105951996, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: sceneFader
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 14953455}
     - target: {fileID: 1881837450105951996, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: sceneToLoad
       value: Chapter 3 - Theatre3
@@ -1959,7 +1974,7 @@ PrefabInstance:
     - target: {fileID: 1881837450105951996, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: playerDoorIndicator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1985963298}
     - target: {fileID: 1881837450105951998, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
       propertyPath: m_Size.x
       value: 3.1465244
@@ -2014,6 +2029,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
+--- !u!1 &1709293435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1881837450105951985, guid: 1a0035746d73d034e919aa7940c9706f, type: 3}
+  m_PrefabInstance: {fileID: 1709293434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1851011765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2314,6 +2334,11 @@ PrefabInstance:
 --- !u!4 &1985963297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4508788267484934024, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
+  m_PrefabInstance: {fileID: 1985963296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1985963298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4508788267484934030, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
   m_PrefabInstance: {fileID: 1985963296}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2055842937

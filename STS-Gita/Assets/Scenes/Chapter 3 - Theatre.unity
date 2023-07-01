@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 2545275165403492141, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492142, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -269,8 +273,6 @@ GameObject:
   - component: {fileID: 393853536}
   - component: {fileID: 393853535}
   - component: {fileID: 393853534}
-  - component: {fileID: 393853533}
-  - component: {fileID: 393853532}
   m_Layer: 10
   m_Name: Ballerina (4)
   m_TagString: Enemy
@@ -278,43 +280,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &393853532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393853531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: 1.43, y: 0, z: 0}
-  attackRange: 1.5
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &393853533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393853531}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 393853536}
-  maxHealth: 100
-  isBoss: 0
-  sceneFader: {fileID: 0}
-  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &393853534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -749,8 +714,6 @@ GameObject:
   - component: {fileID: 751398133}
   - component: {fileID: 751398132}
   - component: {fileID: 751398131}
-  - component: {fileID: 751398130}
-  - component: {fileID: 751398129}
   m_Layer: 10
   m_Name: Ballerina (2)
   m_TagString: Enemy
@@ -758,43 +721,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &751398129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751398128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: 1.43, y: 0, z: 0}
-  attackRange: 1.5
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &751398130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751398128}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 751398133}
-  maxHealth: 100
-  isBoss: 0
-  sceneFader: {fileID: 0}
-  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &751398131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1171,8 +1097,6 @@ GameObject:
   - component: {fileID: 1097279068}
   - component: {fileID: 1097279067}
   - component: {fileID: 1097279066}
-  - component: {fileID: 1097279065}
-  - component: {fileID: 1097279064}
   m_Layer: 10
   m_Name: Ballerina (3)
   m_TagString: Enemy
@@ -1180,43 +1104,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1097279064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097279063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: 1.43, y: 0, z: 0}
-  attackRange: 1.5
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &1097279065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097279063}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1097279068}
-  maxHealth: 100
-  isBoss: 0
-  sceneFader: {fileID: 0}
-  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &1097279066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1763,8 +1650,6 @@ GameObject:
   - component: {fileID: 1851011766}
   - component: {fileID: 1851011772}
   - component: {fileID: 1851011771}
-  - component: {fileID: 1851011770}
-  - component: {fileID: 1851011769}
   m_Layer: 10
   m_Name: Ballerina
   m_TagString: Enemy
@@ -1859,43 +1744,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1851011769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851011765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: 1.43, y: 0, z: 0}
-  attackRange: 1.5
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &1851011770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851011765}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1851011766}
-  maxHealth: 100
-  isBoss: 0
-  sceneFader: {fileID: 0}
-  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &1851011771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2065,8 +1913,6 @@ GameObject:
   - component: {fileID: 2055842942}
   - component: {fileID: 2055842941}
   - component: {fileID: 2055842940}
-  - component: {fileID: 2055842939}
-  - component: {fileID: 2055842938}
   m_Layer: 10
   m_Name: Ballerina (1)
   m_TagString: Enemy
@@ -2074,43 +1920,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2055842938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055842937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  attackOffset: {x: 1.43, y: 0, z: 0}
-  attackRange: 1.5
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &2055842939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055842937}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 2055842942}
-  maxHealth: 100
-  isBoss: 0
-  sceneFader: {fileID: 0}
-  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &2055842940
 BoxCollider2D:
   m_ObjectHideFlags: 0

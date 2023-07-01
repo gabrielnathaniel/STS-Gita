@@ -425,6 +425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 2545275165403492141, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492142, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -1096,8 +1100,6 @@ GameObject:
   - component: {fileID: 1118349037}
   - component: {fileID: 1118349043}
   - component: {fileID: 1118349042}
-  - component: {fileID: 1118349041}
-  - component: {fileID: 1118349040}
   m_Layer: 10
   m_Name: Saskia Monster
   m_TagString: Enemy
@@ -1193,43 +1195,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1118349040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118349036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cb1baeaf8c34408d43cf99d6b9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 30
-  attackOffset: {x: 1.64, y: 0, z: 0}
-  attackRange: 2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &1118349041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118349036}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb74684b931ebf04d9f0ee0855bcc59f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 529204716}
-  isFlipped: 0
-  animator: {fileID: 1118349037}
-  maxHealth: 800
-  isBoss: 0
-  sceneFader: {fileID: 14953455}
-  sceneToLoad: Chapter 3 - Candy Land5
 --- !u!61 &1118349042
 BoxCollider2D:
   m_ObjectHideFlags: 0
