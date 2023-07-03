@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5346902486446347050, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8fbb32ad2072ae4e9abf055ddaac063, type: 3}
 --- !u!114 &14953455 stripped
@@ -453,6 +457,9 @@ MonoBehaviour:
   isFlipped: 0
   animator: {fileID: 285612943}
   maxHealth: 200
+  isBoss: 0
+  sceneFader: {fileID: 0}
+  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &285612941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5779,6 +5786,9 @@ MonoBehaviour:
   isFlipped: 0
   animator: {fileID: 813941758}
   maxHealth: 200
+  isBoss: 0
+  sceneFader: {fileID: 0}
+  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &813941756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5930,6 +5940,63 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1001 &848864692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 179.73357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 287.70953
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1107028
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656285, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833875850313656287, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98f3a5d9a4be14bc4b01991feaf76fea, type: 3}
 --- !u!1 &894430209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6413,6 +6480,9 @@ MonoBehaviour:
   isFlipped: 0
   animator: {fileID: 1197588530}
   maxHealth: 200
+  isBoss: 0
+  sceneFader: {fileID: 0}
+  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &1197588528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7012,6 +7082,9 @@ MonoBehaviour:
   isFlipped: 0
   animator: {fileID: 1736241045}
   maxHealth: 200
+  isBoss: 0
+  sceneFader: {fileID: 0}
+  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &1736241050
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7362,6 +7435,9 @@ MonoBehaviour:
   isFlipped: 0
   animator: {fileID: 2085780523}
   maxHealth: 200
+  isBoss: 0
+  sceneFader: {fileID: 0}
+  sceneToLoad: Chapter 6 - Candy Land7
 --- !u!61 &2085780521
 BoxCollider2D:
   m_ObjectHideFlags: 0
