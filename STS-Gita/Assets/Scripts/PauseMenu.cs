@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public bool isPaused;
+    [SerializeField] GameObject controlsMenu;
+    [SerializeField] SceneFader sceneFader;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +19,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && controlsMenu.activeSelf == false)
         {
             if (isPaused)
             {
@@ -42,5 +44,19 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+    }
+
+    public void OpenControlsMenu()
+    {
+        controlsMenu.SetActive(true);
+    }
+
+    public void ExitToMainMenu()
+    {
+        ResumeGame();
+        if (sceneFader != null)
+        {
+            sceneFader.FadeTo("MainMenu");
+        }
     }
 }
