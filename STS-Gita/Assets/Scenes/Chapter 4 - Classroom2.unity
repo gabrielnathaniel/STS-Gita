@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c34573194dd184cbdff359b3ddf4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Chapter 2 - Canteen
+  sceneToLoad: Chapter 4 - Broken Home
   sceneFader: {fileID: 795014474}
 --- !u!4 &165930511
 Transform:
@@ -1257,6 +1257,8 @@ PlayableDirector:
     value: {fileID: 848084368}
   - key: {fileID: -2703171894215397677, guid: 8180af0332859fe419ff9a86265838e8, type: 2}
     value: {fileID: 429761058}
+  - key: {fileID: 7268365968897910431, guid: 8180af0332859fe419ff9a86265838e8, type: 2}
+    value: {fileID: 165930509}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &855192629

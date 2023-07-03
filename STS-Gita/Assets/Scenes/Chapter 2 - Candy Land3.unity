@@ -1767,7 +1767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c34573194dd184cbdff359b3ddf4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Chapter 2 - CandlyLand4l
+  sceneToLoad: Chapter 2 - Candy Land4
   sceneFader: {fileID: 14953455}
 --- !u!4 &1889745757
 Transform:

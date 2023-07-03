@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Scene 6
   m_EditorClassIdentifier: 
   sentences:
-  - text: Biru goblok sangean.
+  - text: . . . .
   background: {fileID: 21300000, guid: f267fe7054e5d2d4e856c80db0b8ffa4, type: 3}
   nextScene: {fileID: 11400000, guid: b9c34e00a7799d64eba64470f3f920dd, type: 2}
