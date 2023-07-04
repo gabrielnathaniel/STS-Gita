@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 
     public SceneFader sceneFader;
 
+    [SerializeField] private GameObject controlsMenu;
+
     public void Play()
     {
         sceneFader.FadeTo(sceneToLoad);
@@ -16,6 +18,11 @@ public class MainMenu : MonoBehaviour
     public void Load()
     {
         sceneFader.FadeTo("LevelSelect");
+    }
+
+    public void OpenControlsMenu()
+    {
+        controlsMenu.SetActive(true);
     }
 
     public void Exit()
