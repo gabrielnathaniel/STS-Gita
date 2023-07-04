@@ -545,7 +545,6 @@ GameObject:
   - component: {fileID: 529204720}
   - component: {fileID: 529204719}
   - component: {fileID: 529204718}
-  - component: {fileID: 529204717}
   m_Layer: 8
   m_Name: Gita_Isekai
   m_TagString: Player
@@ -643,23 +642,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &529204717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529204713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e744ebc444560f74aae0e5f393dcaa57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 529204714}
-  maxHealth: 100
-  currentHealth: 0
-  deathEffect: {fileID: 0}
-  healthBar: {fileID: 0}
 --- !u!114 &529204718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,7 +681,6 @@ MonoBehaviour:
   runSpeed: 40
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,14 +9,14 @@ public class ChapterOpening : MonoBehaviour
     public string sceneToLoad = "Prolog";
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         StartCoroutine(Completed());
     }
 
     IEnumerator Completed()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         sceneFader.FadeTo(sceneToLoad);
     }
 }

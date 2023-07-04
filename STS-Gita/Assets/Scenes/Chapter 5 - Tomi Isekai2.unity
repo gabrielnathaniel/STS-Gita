@@ -413,6 +413,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 529204716}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 529204713}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -520,25 +524,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 427790036}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &427790039 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 427790036}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &427790040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427790039}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 1313251910}
-  FixScale: 0.75
 --- !u!1 &518407971
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +617,6 @@ GameObject:
   - component: {fileID: 529204720}
   - component: {fileID: 529204719}
   - component: {fileID: 529204718}
-  - component: {fileID: 529204717}
   m_Layer: 8
   m_Name: Gita_Isekai
   m_TagString: Player
@@ -730,23 +714,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &529204717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529204713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e744ebc444560f74aae0e5f393dcaa57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 529204714}
-  maxHealth: 100
-  currentHealth: 0
-  deathEffect: {fileID: 0}
-  healthBar: {fileID: 0}
 --- !u!114 &529204718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,7 +753,6 @@ MonoBehaviour:
   runSpeed: 40
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5856,9 +5822,11 @@ MonoBehaviour:
   - message: Aku sebenarnya tidak pernah mau untuk terbuka mengenai hal ini, termasuk
       ke orang terdekat seperti kamu.
     actorId: 1
-  - message: "Karena sampai saat ini pun bayang\x02bayang Biru selalu teringat dalam
-      pikiranku, makanya aku selalu menghindari segala sesuatu yang berhubungan dengan
-      kucing."
+  - message: "Karena sampai saat ini pun bayang\x02 bayang Biru selalu teringat dalam
+      pikiranku,"
+    actorId: 1
+  - message: Makanya aku selalu menghindari segala sesuatu yang berhubungan dengan
+      kucing.
     actorId: 1
   - message: 'Aku melakukan ini demi kebaikanmu, Tom... '
     actorId: 0
@@ -5867,10 +5835,11 @@ MonoBehaviour:
     actorId: 1
   - message: Kamu pasti tau kan rasanya kehilangan sesuatu yang kamu sayang?
     actorId: 1
-  - message: Emang kamu yakin kalau membantu orang menyelesaikan masalah mereka itu
-      jadi "distraksi" terbaik atas masalah kamu?
+  - message: Memang kamu yakin kalau membantu orang menyelesaikan masalah mereka,
     actorId: 0
-  - message: LEBIH BAIK KAMU URUS SAJA URSANMU SENDIRI!
+  - message: Akan menjadi "distraksi" terbaik atas masalahmu?
+    actorId: 0
+  - message: LEBIH BAIK KAMU URUS SAJA URUSANMU SENDIRI!
     actorId: 1
   - message: KELUAR!!!!!
     actorId: 1
@@ -6134,7 +6103,6 @@ MonoBehaviour:
   runSpeed: 35
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &1313251914
 MonoBehaviour:
   m_ObjectHideFlags: 0

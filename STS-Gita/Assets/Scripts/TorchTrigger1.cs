@@ -7,11 +7,11 @@ public class TorchTrigger1 : MonoBehaviour
 {
     [SerializeField] GameObject playerDoorIndicator;
     public GameObject glimpse1;
-    public PlayableDirector timeline1;
+    public GameObject glimpseDialogue1;
 
     void Start()
     {
-        timeline1 = GetComponent<PlayableDirector>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,7 +36,7 @@ public class TorchTrigger1 : MonoBehaviour
         if(playerDoorIndicator.activeInHierarchy && Input.GetKeyDown(KeyCode.F))
         {
             glimpse1.SetActive(true);
-            timeline1.Play();
+            glimpseDialogue1.SetActive(true);
             this.gameObject.SetActive(false);
         }
     }

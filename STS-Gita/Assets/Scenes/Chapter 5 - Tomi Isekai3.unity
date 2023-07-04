@@ -301,6 +301,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1667578321}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1667578318}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -413,25 +417,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 187988988}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &187988991 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 187988988}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &187988992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187988991}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 1313251910}
-  FixScale: 0.75
 --- !u!1 &249727071
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +536,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 529204716}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 529204713}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -658,25 +647,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 427790036}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &427790039 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 427790036}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &427790040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427790039}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 1313251910}
-  FixScale: 0.75
 --- !u!1 &518407971
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +740,6 @@ GameObject:
   - component: {fileID: 529204720}
   - component: {fileID: 529204719}
   - component: {fileID: 529204718}
-  - component: {fileID: 529204717}
   m_Layer: 8
   m_Name: Gita_Isekai
   m_TagString: Player
@@ -868,23 +837,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &529204717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529204713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e744ebc444560f74aae0e5f393dcaa57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 529204714}
-  maxHealth: 100
-  currentHealth: 0
-  deathEffect: {fileID: 0}
-  healthBar: {fileID: 0}
 --- !u!114 &529204718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +876,6 @@ MonoBehaviour:
   runSpeed: 40
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,10 +1038,12 @@ MonoBehaviour:
     actorId: 1
   - message: Itu bukan hal yang mudah, terlebih ini atas keteledoranku.
     actorId: 0
-  - message: Tom.. Kamu denger sendiri kan apa yang Biru bilang?
+  - message: Tom.. Kamu dengar sendiri kan apa yang Biru bilang?
     actorId: 2
-  - message: Maaf kalau terlalu ikut campur, tetapi di kondisi seperti ini memang
-      ada baiknya kamu harus mengikhlaskan kepergiannya.
+  - message: Maaf kalau terlalu ikut campur,
+    actorId: 2
+  - message: Tetapi di kondisi seperti ini memang ada baiknya kamu harus mengikhlaskan
+      kepergiannya.
     actorId: 2
   - message: Bukan hal yang baik jika kamu terlalu larut dalam kesedihan.
     actorId: 2
@@ -1101,7 +1054,9 @@ MonoBehaviour:
   - message: Ini bukan sepenuhnya kesalahanmu, Tomi.
     actorId: 1
   - message: Jangan terlalu menyalahkan dirimu sendiri, cobalah untuk bermain dengan
-      kucing lain, sayangi mereka sebagaimana kamu menyayangiku, Tom..
+      kucing lain,
+    actorId: 1
+  - message: Sayangi mereka sebagaimana kamu menyayangiku, Tom..
     actorId: 1
   - message: Jangan jauhi mereka karena trauma yang kamu miliki itu.
     actorId: 1
@@ -1109,7 +1064,9 @@ MonoBehaviour:
       mereka.
     actorId: 1
   - message: Dan untuk yang terakhir, terima kasih pada akhirnya kamu mau mengikhlaskan
-      kepergianku ini. Aku selalu berharap hal baik menyertaimu, Tom.
+      kepergianku ini.
+    actorId: 1
+  - message: Aku selalu berharap hal baik menyertaimu, Tom.
     actorId: 1
   - message: Terima kasih banyak untuk segalanya, sahabatku.
     actorId: 1
@@ -6331,7 +6288,6 @@ MonoBehaviour:
   runSpeed: 35
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &1313251914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6508,6 +6464,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1313251919}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1313251910}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6615,25 +6575,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 1393762757}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1393762759 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 1393762757}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1393762760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393762759}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 1313251910}
-  FixScale: 0.75
 --- !u!1 &1486242727
 GameObject:
   m_ObjectHideFlags: 0

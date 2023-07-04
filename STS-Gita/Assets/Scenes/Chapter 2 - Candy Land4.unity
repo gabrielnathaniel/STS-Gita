@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 285612939}
   m_Layer: 10
   m_Name: Waffle (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5747,7 +5747,7 @@ GameObject:
   - component: {fileID: 813941754}
   m_Layer: 10
   m_Name: Waffle (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6445,7 +6445,7 @@ GameObject:
   - component: {fileID: 1197588526}
   m_Layer: 10
   m_Name: Waffle (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6960,7 +6960,7 @@ GameObject:
   - component: {fileID: 1736241048}
   m_Layer: 10
   m_Name: Waffle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7400,7 +7400,7 @@ GameObject:
   - component: {fileID: 2085780519}
   m_Layer: 10
   m_Name: Waffle (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
