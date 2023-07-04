@@ -94,10 +94,10 @@ EditorBuildSettings:
     guid: 2a9804e11aa1b3a4ea044e3cd33ab844
   - enabled: 1
     path: Assets/Scenes/Chapter 3 - Theatre3.unity
-    guid: 3970a9963c83338469bf65691c20965e
+    guid: c55a028277f5f36459eb0010f43d7192
   - enabled: 1
     path: Assets/Scenes/Chapter 3 - Theatre4.unity
-    guid: c55a028277f5f36459eb0010f43d7192
+    guid: faa206f26777c5b48af185329d9c1e3d
   - enabled: 1
     path: Assets/Scenes/Chapter 3 - Theatre5.unity
     guid: c061286c207022b4880e6d18fbeaa943
