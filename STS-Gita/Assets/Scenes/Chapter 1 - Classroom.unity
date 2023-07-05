@@ -1063,6 +1063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 2 - Opening
   sceneFader: {fileID: 795014474}
+  unlockChapter: 2
 --- !u!4 &165930511
 Transform:
   m_ObjectHideFlags: 0
@@ -11588,7 +11589,6 @@ MonoBehaviour:
   runSpeed: 35
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &1139737959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16230,7 +16230,6 @@ MonoBehaviour:
   runSpeed: 35
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &2136946427
 MonoBehaviour:
   m_ObjectHideFlags: 0

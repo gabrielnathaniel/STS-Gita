@@ -36,4 +36,9 @@ public class LevelSelect : MonoBehaviour
     {
         sceneFader.FadeTo("Chapter 5 - Opening");
     }
+
+    public void Close()
+    {
+        sceneFader.FadeTo("MainMenu");
+    }
 }

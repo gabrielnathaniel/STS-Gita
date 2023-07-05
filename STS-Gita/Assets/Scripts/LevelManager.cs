@@ -31,7 +31,7 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    public static void CompleteLevel(int levelNumber)
+    public static void UnlockLevel(int levelNumber)
     {
         int unlocked = PlayerPrefs.GetInt("levelsUnlocked", 0);
 
