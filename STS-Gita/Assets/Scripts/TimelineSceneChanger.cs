@@ -8,8 +8,11 @@ public class TimelineSceneChanger : MonoBehaviour
 
     public SceneFader sceneFader;
 
+    [SerializeField] private int unlockChapter;
+
     void OnEnable()
     {
+        LevelManager.UnlockLevel(unlockChapter);
         sceneFader.FadeTo(sceneToLoad);
     }
 }
