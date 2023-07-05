@@ -1962,12 +1962,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492142, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_Volume
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492142, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 629992c7cbec3a949b19d4882e2bec8a, type: 3}
+      objectReference: {fileID: 8300000, guid: a13bc840f61bfc44da8a227cdfe9bda7, type: 3}
     - target: {fileID: 2545275165403492143, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_RootOrder
       value: 2
