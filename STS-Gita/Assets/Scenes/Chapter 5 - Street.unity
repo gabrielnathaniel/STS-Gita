@@ -1536,7 +1536,7 @@ MonoBehaviour:
   runSpeed: 35
   isCombat: 0
   isInDialogue: 0
-  timeline: {fileID: 0}
+  timeline: {fileID: 1015335838}
 --- !u!114 &1139737959
 MonoBehaviour:
   m_ObjectHideFlags: 0

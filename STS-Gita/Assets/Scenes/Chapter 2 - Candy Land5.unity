@@ -679,8 +679,9 @@ MonoBehaviour:
   animator: {fileID: 529204714}
   rb: {fileID: 529204722}
   runSpeed: 40
+  isCombat: 0
   isInDialogue: 0
-  timeline: {fileID: 0}
+  timeline: {fileID: 275295660}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,6 +1371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 2 - Candy Land6
   sceneFader: {fileID: 14953455}
+  unlockChapter: 0
 --- !u!4 &1564730744
 Transform:
   m_ObjectHideFlags: 0

@@ -590,6 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 5 - Tomi Isekai3
   sceneFader: {fileID: 1366059217}
+  unlockChapter: 0
 --- !u!4 &523991142
 Transform:
   m_ObjectHideFlags: 0
@@ -755,8 +756,9 @@ MonoBehaviour:
   animator: {fileID: 529204714}
   rb: {fileID: 529204722}
   runSpeed: 40
+  isCombat: 0
   isInDialogue: 0
-  timeline: {fileID: 0}
+  timeline: {fileID: 958661640}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5954,7 +5956,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 529204719}
 --- !u!1001 &1068471788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6166,6 +6168,7 @@ MonoBehaviour:
   animator: {fileID: 1313251917}
   rb: {fileID: 0}
   runSpeed: 35
+  isCombat: 0
   isInDialogue: 0
   timeline: {fileID: 0}
 --- !u!114 &1313251914

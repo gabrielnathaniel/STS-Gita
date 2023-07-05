@@ -712,7 +712,7 @@ MonoBehaviour:
   runSpeed: 40
   isCombat: 0
   isInDialogue: 0
-  timeline: {fileID: 0}
+  timeline: {fileID: 765134773}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,7 +2124,7 @@ PrefabInstance:
     - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: parent
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 529204713}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0

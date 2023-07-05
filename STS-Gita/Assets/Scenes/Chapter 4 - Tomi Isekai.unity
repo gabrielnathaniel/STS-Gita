@@ -417,6 +417,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 529204716}
     m_Modifications:
+    - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 529204713}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -529,25 +533,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 427790036}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &427790039 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4715033625274825975, guid: acfd51287ace6044bab3760953599449, type: 3}
-  m_PrefabInstance: {fileID: 427790036}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &427790040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427790039}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c335983fb194bcc85845abefe9e4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 1313251910}
-  FixScale: 0.75
 --- !u!1 &518407971
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,6 +595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 4 - Hall3
   sceneFader: {fileID: 1366059217}
+  unlockChapter: 0
 --- !u!4 &523991142
 Transform:
   m_ObjectHideFlags: 0
@@ -752,9 +738,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 529204714}
+  sceneFader: {fileID: 0}
+  sceneToLoad: 
   maxHealth: 100
   currentHealth: 0
-  deathEffect: {fileID: 0}
   healthBar: {fileID: 0}
 --- !u!114 &529204718
 MonoBehaviour:
@@ -793,9 +780,9 @@ MonoBehaviour:
   animator: {fileID: 529204714}
   rb: {fileID: 529204722}
   runSpeed: 40
+  isCombat: 0
   isInDialogue: 0
-  timeline: {fileID: 0}
-  tr: {fileID: 0}
+  timeline: {fileID: 1731928509}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5989,7 +5976,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313251910}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7086dda090cf7fd418f61ba03b5ee0d4, type: 3}
   m_Name: 
@@ -5998,9 +5985,9 @@ MonoBehaviour:
   animator: {fileID: 1313251917}
   rb: {fileID: 0}
   runSpeed: 35
+  isCombat: 0
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &1313251914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6594,7 +6581,7 @@ MonoBehaviour:
   isActive: 0
   textSpeed: 0.05
   sound: {fileID: 8300000, guid: e8b05b73d42ad9e448b148c620151e36, type: 3}
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 529204719}
 --- !u!114 &1731928512
 MonoBehaviour:
   m_ObjectHideFlags: 0
