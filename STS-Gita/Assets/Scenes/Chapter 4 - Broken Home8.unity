@@ -400,6 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 4 - UKS
   sceneFader: {fileID: 14953455}
+  unlockChapter: 0
 --- !u!4 &518870402
 Transform:
   m_ObjectHideFlags: 0
@@ -565,8 +566,9 @@ MonoBehaviour:
   animator: {fileID: 529204714}
   rb: {fileID: 529204722}
   runSpeed: 40
+  isCombat: 0
   isInDialogue: 0
-  timeline: {fileID: 0}
+  timeline: {fileID: 1409582884}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,7 +855,7 @@ PrefabInstance:
     - target: {fileID: 352068832259760644, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: parent
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 529204713}
     - target: {fileID: 437203488262671113, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_IsActive
       value: 0

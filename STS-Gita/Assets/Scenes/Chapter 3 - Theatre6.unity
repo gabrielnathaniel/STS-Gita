@@ -687,8 +687,9 @@ MonoBehaviour:
   animator: {fileID: 529204714}
   rb: {fileID: 529204722}
   runSpeed: 40
+  isCombat: 0
   isInDialogue: 0
-  timeline: {fileID: 0}
+  timeline: {fileID: 2097193207}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
