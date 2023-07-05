@@ -6304,7 +6304,6 @@ MonoBehaviour:
   runSpeed: 35
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &1139737959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6473,6 +6472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 3 - Theatre
   sceneFader: {fileID: 414169461}
+  unlockChapter: 0
 --- !u!4 &1374796170
 Transform:
   m_ObjectHideFlags: 0

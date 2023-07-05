@@ -13,7 +13,7 @@ public class PlayerCombat : MonoBehaviour
     public int attackDamage = 40;
 
     public float attackRate = 2f;
-    float nextAttackTime = 0f;
+    // float nextAttackTime = 0f;
 
     public static PlayerCombat instance;
     public bool isAttacking;

@@ -611,7 +611,6 @@ MonoBehaviour:
   runSpeed: 40
   isInDialogue: 0
   timeline: {fileID: 0}
-  tr: {fileID: 0}
 --- !u!114 &529204720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,15 +972,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4508788267484934024, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.13076924
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 4508788267484934024, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.13076924
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 4508788267484934024, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.13076924
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 4508788267484934024, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -989,7 +988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4508788267484934024, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4508788267484934024, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1031,6 +1030,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4508788267484934031, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a007e85a68b41d4e813adc644c82b02, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fd67a68f9c2bb14092e03d787f92c0d, type: 3}
 --- !u!4 &749804644 stripped

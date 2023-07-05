@@ -331,6 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 2 - Canteen
   sceneFader: {fileID: 795014474}
+  unlockChapter: 0
 --- !u!4 &165930511
 Transform:
   m_ObjectHideFlags: 0
@@ -351,6 +352,36 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4715033625648482671, guid: acfd51287ace6044bab3760953599449, type: 3}
   m_PrefabInstance: {fileID: 1018115479}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &255910536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2545275165403492141, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
+  m_PrefabInstance: {fileID: 791065413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &255910537 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2545275165403492142, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
+  m_PrefabInstance: {fileID: 791065413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &255910539
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255910536}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &332649940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -601,6 +632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 627976736}
   - component: {fileID: 627976735}
+  - component: {fileID: 627976737}
   m_Layer: 0
   m_Name: Tomi Faint
   m_TagString: Untagged
@@ -649,7 +681,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -611284291, guid: af491eb557c39aa47b75d01d0becda3d, type: 3}
+  m_Sprite: {fileID: -744136231, guid: 6576f9f8a6c76f242a1eef1566281c29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -667,14 +699,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627976734}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.93, y: -2.8, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &627976737
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627976734}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ee4eba2824c2e3845a4f3ebad278d3f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &650463055 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2904498922623631460, guid: acfd51287ace6044bab3760953599449, type: 3}
@@ -738,6 +790,8 @@ PlayableDirector:
     value: {fileID: 627976734}
   - key: {fileID: 3884928359398637080, guid: edda81387475deb46a84129599a61a7e, type: 2}
     value: {fileID: 1543284255}
+  - key: {fileID: 2090903216246011793, guid: edda81387475deb46a84129599a61a7e, type: 2}
+    value: {fileID: 255910537}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &755180852
@@ -912,12 +966,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492141, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492142, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 1e3f6a51d41a62e4eb7bf51c4047839b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2545275165403492143, guid: 3a288ad53ceb6c443a29b830445fc87d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1797,7 +1851,6 @@ MonoBehaviour:
   runSpeed: 35
   isInDialogue: 0
   timeline: {fileID: 755180851}
-  tr: {fileID: 0}
 --- !u!114 &1139737959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2217,6 +2270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 4 - Classroom2
   sceneFader: {fileID: 795014474}
+  unlockChapter: 0
 --- !u!4 &1543284257
 Transform:
   m_ObjectHideFlags: 0
