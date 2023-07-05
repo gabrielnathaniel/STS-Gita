@@ -10372,7 +10372,7 @@ MonoBehaviour:
     actorId: 0
   - message: Eh Jangan!
     actorId: 2
-  - message: Kalau kayak gitu kamu nanti kamu nggak bakal paham.
+  - message: Kalau kayak gitu kamu nanti nggak akan paham.
     actorId: 2
   - message: Atau...
     actorId: 2
@@ -11627,6 +11627,7 @@ MonoBehaviour:
   animator: {fileID: 1139737955}
   rb: {fileID: 0}
   runSpeed: 35
+  isCombat: 0
   isInDialogue: 0
   timeline: {fileID: 0}
 --- !u!114 &1139737959
@@ -16288,6 +16289,7 @@ MonoBehaviour:
   animator: {fileID: 2136946430}
   rb: {fileID: 0}
   runSpeed: 35
+  isCombat: 0
   isInDialogue: 0
   timeline: {fileID: 0}
 --- !u!114 &2136946427

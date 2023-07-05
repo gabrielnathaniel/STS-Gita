@@ -954,9 +954,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 529204714}
+  sceneFader: {fileID: 14953455}
+  sceneToLoad: Chapter 3 - Theatre3
   maxHealth: 100
   currentHealth: 0
-  deathEffect: {fileID: 0}
   healthBar: {fileID: 1281718629}
 --- !u!114 &529204718
 MonoBehaviour:

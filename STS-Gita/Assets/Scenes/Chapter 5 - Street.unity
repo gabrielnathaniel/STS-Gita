@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c34573194dd184cbdff359b3ddf4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: EndingCreditScene
+  sceneToLoad: MainMenu
   sceneFader: {fileID: 952336569}
   unlockChapter: 0
 --- !u!4 &994643757
@@ -1534,6 +1534,7 @@ MonoBehaviour:
   animator: {fileID: 1139737955}
   rb: {fileID: 0}
   runSpeed: 35
+  isCombat: 0
   isInDialogue: 0
   timeline: {fileID: 0}
 --- !u!114 &1139737959
@@ -1747,11 +1748,14 @@ MonoBehaviour:
     m_LineSpacing: 1.5
   m_Text: '-Narrative Writer-
 
+    Widyarso J.P.
+
     Arvian Demas
 
     M. Najm Attoriq
 
-    Wahyu N.'
+    Wahyu
+    N.'
 --- !u!222 &1249390356
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2482,7 +2486,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: '-Original Concet & Lead Project-
+  m_Text: '-Original Concept & Lead Project-
 
     Gabriel Nathaniel
 

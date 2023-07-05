@@ -628,9 +628,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 529204714}
+  sceneFader: {fileID: 14953455}
+  sceneToLoad: Chapter 4 - Broken Home7
   maxHealth: 100
   currentHealth: 0
-  deathEffect: {fileID: 0}
   healthBar: {fileID: 1281718629}
 --- !u!114 &529204718
 MonoBehaviour:
@@ -1383,7 +1384,7 @@ MonoBehaviour:
   player: {fileID: 529204716}
   isFlipped: 0
   animator: {fileID: 1288690928}
-  maxHealth: 100
+  maxHealth: 1500
   isBoss: 1
   sceneFader: {fileID: 14953455}
   sceneToLoad: Chapter 4 - Broken Home8
@@ -1400,7 +1401,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.006739855, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1411,7 +1412,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.36, y: 2.4}
+  m_Size: {x: 2.1847615, y: 2.4}
   m_EdgeRadius: 0
 --- !u!50 &1288690934
 Rigidbody2D:

@@ -1,16 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
 	public Animator animator;
-
+	public SceneFader sceneFader;
+	public string sceneToLoad;
 	public int maxHealth = 100;
 	public int currentHealth;
-
-	public GameObject deathEffect;
 
 	public HealthBar healthBar;
 
@@ -28,16 +26,16 @@ public class PlayerHealth : MonoBehaviour
 
 		DamageAnimation();
 
-		// if (health <= 0)
-		// {
-		// 	Die();
-		// }
+		if (currentHealth <= 0)
+		{
+			Die();
+		}
 	}
 
-	// void Die()
-	// {
-	// 	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-	// }
+	void Die()
+	{
+		sceneFader.FadeTo(sceneToLoad);
+	}
 
 	void DamageAnimation()
 	{
