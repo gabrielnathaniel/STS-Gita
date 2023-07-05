@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour {
 	private float dashingTime = 0.2f;
 	private float dashingCooldown = 1f;
 
+	public bool isCombat = false;
+
 	public bool isInDialogue = false;
 	[SerializeField] private PlayableDirector timeline;
 
@@ -44,7 +46,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-		if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+		if(Input.GetKeyDown(KeyCode.LeftShift) && canDash && isCombat)
 		{
 			StartCoroutine(Dash());
 		}

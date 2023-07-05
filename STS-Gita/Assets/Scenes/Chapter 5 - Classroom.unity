@@ -331,6 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 2 - Canteen
   sceneFader: {fileID: 795014474}
+  unlockChapter: 0
 --- !u!4 &165930511
 Transform:
   m_ObjectHideFlags: 0
@@ -611,10 +612,10 @@ MonoBehaviour:
       atas masalah yang mereka miliki.
     actorId: 0
   - message: Makanya aku bisa dengan mudah masuk ke dalam hati orang tersebut untuk
-      menyelesaikan masalah mereka.
+      menyelesaikan masalahnya.
     actorId: 0
-  - message: 'Jadi kamu jangan menganggap kalau kamu gak berkontribusi dalam penyelesaian
-      masalah orang '
+  - message: Jadi kamu jangan menganggap kalau kamu tidak berkontribusi dalam penyelesaian
+      masalah mereka.
     actorId: 0
   - message: Tetap saja itu curang, Git..
     actorId: 1
@@ -823,6 +824,10 @@ PrefabInstance:
     - target: {fileID: 4715033624236595720, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_Name
       value: DialogueText
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715033624236595722, guid: acfd51287ace6044bab3760953599449, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4715033625274825974, guid: acfd51287ace6044bab3760953599449, type: 3}
       propertyPath: m_RootOrder
@@ -2313,6 +2318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Chapter 5 - Tomi Isekai
   sceneFader: {fileID: 795014474}
+  unlockChapter: 0
 --- !u!4 &1543284257
 Transform:
   m_ObjectHideFlags: 0
